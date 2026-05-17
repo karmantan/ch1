@@ -1,0 +1,1872 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{ABI_2018}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=8cdcc93f429c0e2dbee6d8a1b257f8b1}{%
+           family={ABI},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {HM Government}%
+      }
+      \strng{namehash}{8cdcc93f429c0e2dbee6d8a1b257f8b1}
+      \strng{fullhash}{8cdcc93f429c0e2dbee6d8a1b257f8b1}
+      \strng{fullhashraw}{8cdcc93f429c0e2dbee6d8a1b257f8b1}
+      \strng{bibnamehash}{8cdcc93f429c0e2dbee6d8a1b257f8b1}
+      \strng{authorbibnamehash}{8cdcc93f429c0e2dbee6d8a1b257f8b1}
+      \strng{authornamehash}{8cdcc93f429c0e2dbee6d8a1b257f8b1}
+      \strng{authorfullhash}{8cdcc93f429c0e2dbee6d8a1b257f8b1}
+      \strng{authorfullhashraw}{8cdcc93f429c0e2dbee6d8a1b257f8b1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{journaltitle}{gov.uk}
+      \field{month}{10}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://assets.publishing.service.gov.uk/media/5bd08dd1ed915d78af510220/code-on-genetic-testing-and-insurance.pdf
+      \endverb
+      \verb{url}
+      \verb https://assets.publishing.service.gov.uk/media/5bd08dd1ed915d78af510220/code-on-genetic-testing-and-insurance.pdf
+      \endverb
+    \endentry
+    \entry{abi2023criticalillness}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=a20dd853fdc785a8dacdd3457d628e51}{%
+           family={{Association of British Insurers}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a20dd853fdc785a8dacdd3457d628e51}
+      \strng{fullhash}{a20dd853fdc785a8dacdd3457d628e51}
+      \strng{fullhashraw}{a20dd853fdc785a8dacdd3457d628e51}
+      \strng{bibnamehash}{a20dd853fdc785a8dacdd3457d628e51}
+      \strng{authorbibnamehash}{a20dd853fdc785a8dacdd3457d628e51}
+      \strng{authornamehash}{a20dd853fdc785a8dacdd3457d628e51}
+      \strng{authorfullhash}{a20dd853fdc785a8dacdd3457d628e51}
+      \strng{authorfullhashraw}{a20dd853fdc785a8dacdd3457d628e51}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.abi.org.uk/globalassets/files/publications/public/protection/abi-guide-to-minimum-standards-for-critical-illness-cover-2023.pdf}}
+      \field{note}{[Accessed 20-03-2024]}
+      \field{title}{ABI Guide to minimum standards for critical illness cover}
+      \field{year}{2023}
+    \endentry
+    \entry{aziz2019machine}{incollection}{}{}
+      \name{author}{2}{}{%
+        {{hash=8bdfbf57d50cbd4fda7226c528287329}{%
+           family={Aziz},
+           familyi={A\bibinitperiod},
+           given={Saqib},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f30ec1f394c32d5058097c98ac3d2d3a}{%
+           family={Dowling},
+           familyi={D\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Palgrave Pivot, Cham}%
+      }
+      \strng{namehash}{cef54fbbc42d0654abe31487d2724eef}
+      \strng{fullhash}{cef54fbbc42d0654abe31487d2724eef}
+      \strng{fullhashraw}{cef54fbbc42d0654abe31487d2724eef}
+      \strng{bibnamehash}{cef54fbbc42d0654abe31487d2724eef}
+      \strng{authorbibnamehash}{cef54fbbc42d0654abe31487d2724eef}
+      \strng{authornamehash}{cef54fbbc42d0654abe31487d2724eef}
+      \strng{authorfullhash}{cef54fbbc42d0654abe31487d2724eef}
+      \strng{authorfullhashraw}{cef54fbbc42d0654abe31487d2724eef}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Disrupting Finance}
+      \field{title}{Machine learning and AI for risk management}
+      \field{year}{2019}
+      \field{pages}{33\bibrangedash 50}
+      \range{pages}{18}
+    \endentry
+    \entry{bardey2013genetic}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=80da3cfd4e2fc15cb84ee0d0f1d384a7}{%
+           family={Bardey},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7a83b2b881f616347356b1db67798d4e}{%
+           family={De\bibnamedelima Donder},
+           familyi={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{173c03018305234f735ecb0505798d37}
+      \strng{fullhash}{173c03018305234f735ecb0505798d37}
+      \strng{fullhashraw}{173c03018305234f735ecb0505798d37}
+      \strng{bibnamehash}{173c03018305234f735ecb0505798d37}
+      \strng{authorbibnamehash}{173c03018305234f735ecb0505798d37}
+      \strng{authornamehash}{173c03018305234f735ecb0505798d37}
+      \strng{authorfullhash}{173c03018305234f735ecb0505798d37}
+      \strng{authorfullhashraw}{173c03018305234f735ecb0505798d37}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Health Economics}
+      \field{number}{5}
+      \field{title}{Genetic testing with primary prevention and moral hazard}
+      \field{volume}{32}
+      \field{year}{2013}
+      \field{pages}{768\bibrangedash 779}
+      \range{pages}{12}
+    \endentry
+    \entry{bardey2019trade}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=80da3cfd4e2fc15cb84ee0d0f1d384a7}{%
+           family={Bardey},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7a83b2b881f616347356b1db67798d4e}{%
+           family={De\bibnamedelima Donder},
+           familyi={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3b90e117064a030b87ac2b8cc510e0d1}{%
+           family={Mantilla},
+           familyi={M\bibinitperiod},
+           given={César},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{d1cba07fe83356171b8a9e51b736a477}
+      \strng{fullhash}{d1cba07fe83356171b8a9e51b736a477}
+      \strng{fullhashraw}{d1cba07fe83356171b8a9e51b736a477}
+      \strng{bibnamehash}{d1cba07fe83356171b8a9e51b736a477}
+      \strng{authorbibnamehash}{d1cba07fe83356171b8a9e51b736a477}
+      \strng{authornamehash}{d1cba07fe83356171b8a9e51b736a477}
+      \strng{authorfullhash}{d1cba07fe83356171b8a9e51b736a477}
+      \strng{authorfullhashraw}{d1cba07fe83356171b8a9e51b736a477}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Health Economics}
+      \field{title}{How is the trade-off between adverse selection and discrimination risk affected by genetic testing? Theory and experiment}
+      \field{volume}{68}
+      \field{year}{2019}
+      \field{pages}{102223}
+      \range{pages}{1}
+    \endentry
+    \entry{barigozzi2011genetic}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c573e8a603cb399a8136530bcfb1b6e3}{%
+           family={Barigozzi},
+           familyi={B\bibinitperiod},
+           given={Francesca},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f1d67f6d5b698a8f06f149ad968fb48e}{%
+           family={Henriet},
+           familyi={H\bibinitperiod},
+           given={Dominique},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{15db5f3e5ee590a727506a59afb17e0d}
+      \strng{fullhash}{15db5f3e5ee590a727506a59afb17e0d}
+      \strng{fullhashraw}{15db5f3e5ee590a727506a59afb17e0d}
+      \strng{bibnamehash}{15db5f3e5ee590a727506a59afb17e0d}
+      \strng{authorbibnamehash}{15db5f3e5ee590a727506a59afb17e0d}
+      \strng{authornamehash}{15db5f3e5ee590a727506a59afb17e0d}
+      \strng{authorfullhash}{15db5f3e5ee590a727506a59afb17e0d}
+      \strng{authorfullhashraw}{15db5f3e5ee590a727506a59afb17e0d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Public Economic Theory}
+      \field{number}{1}
+      \field{title}{Genetic information: comparing alternative regulatory approaches when prevention matters}
+      \field{volume}{13}
+      \field{year}{2011}
+      \field{pages}{23\bibrangedash 46}
+      \range{pages}{24}
+    \endentry
+    \entry{belisle2019genetic}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=7edd1a59510be6553b57897ec6f3f877}{%
+           family={Bélisle-Pipon},
+           familyi={B\bibinithyphendelim P\bibinitperiod},
+           given={Jean-Christophe},
+           giveni={J\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=8b41e812a035a7f15a158d71ba3ed626}{%
+           family={Vayena},
+           familyi={V\bibinitperiod},
+           given={Effy},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b5d32b71d58afe07853d2908815d16b2}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Robert\bibnamedelima C},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=3625b083e5602a58cfbddc34d6d06b3e}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={I\bibnamedelima Glenn},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{b5cb9b5efd6ca4218021b84a29eeaa51}
+      \strng{fullhash}{c552d48e17761387859a4196afbdac6f}
+      \strng{fullhashraw}{c552d48e17761387859a4196afbdac6f}
+      \strng{bibnamehash}{b5cb9b5efd6ca4218021b84a29eeaa51}
+      \strng{authorbibnamehash}{b5cb9b5efd6ca4218021b84a29eeaa51}
+      \strng{authornamehash}{b5cb9b5efd6ca4218021b84a29eeaa51}
+      \strng{authorfullhash}{c552d48e17761387859a4196afbdac6f}
+      \strng{authorfullhashraw}{c552d48e17761387859a4196afbdac6f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature medicine}
+      \field{number}{8}
+      \field{title}{Genetic testing, insurance discrimination and medical research: what the United States can learn from peer countries}
+      \field{volume}{25}
+      \field{year}{2019}
+      \field{pages}{1198\bibrangedash 1204}
+      \range{pages}{7}
+    \endentry
+    \entry{boster2017comparative}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=480f0ccda66baaa2cae20390b5ce6a51}{%
+           family={Boster},
+           familyi={B\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5940fa613d06b96ceda78e3de602b68a}{%
+           family={Nicholas},
+           familyi={N\bibinitperiod},
+           given={Jacqueline},
+           giveni={J\bibinitperiod}}}%
+        {{hash=de560bfcd8614bd6cecbab4fece08c83}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Ning},
+           giveni={N\bibinitperiod}}}%
+        {{hash=7b564f0dbe47e9a8f6b15cb41ecbc70f}{%
+           family={Yeh},
+           familyi={Y\bibinitperiod},
+           given={Wei-Shi},
+           giveni={W\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=fde1acd2f5e6d52bfb02e049b43a7f52}{%
+           family={Fay},
+           familyi={F\bibinitperiod},
+           given={Monica},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cfd4d7b0b865614f06a82fcd01f73abb}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9bedee9feaf7f70f91c75372364b12f5}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Ming-Yi},
+           giveni={M\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=70c3bd2e4e1f9175abb64728a5eb7098}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1b7d293a30629a950f5046a07eef75af}
+      \strng{fullhash}{03c7441c1aeb4f7ef2d14b3292f7cf6e}
+      \strng{fullhashraw}{03c7441c1aeb4f7ef2d14b3292f7cf6e}
+      \strng{bibnamehash}{1b7d293a30629a950f5046a07eef75af}
+      \strng{authorbibnamehash}{1b7d293a30629a950f5046a07eef75af}
+      \strng{authornamehash}{1b7d293a30629a950f5046a07eef75af}
+      \strng{authorfullhash}{03c7441c1aeb4f7ef2d14b3292f7cf6e}
+      \strng{authorfullhashraw}{03c7441c1aeb4f7ef2d14b3292f7cf6e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neurology and therapy}
+      \field{title}{Comparative effectiveness research of disease-modifying therapies for the management of multiple sclerosis: analysis of a large health insurance claims database}
+      \field{volume}{6}
+      \field{year}{2017}
+      \field{pages}{91\bibrangedash 102}
+      \range{pages}{12}
+    \endentry
+    \entry{bourreau2020google}{book}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=ce4efaa48912f729f1b0dc8b60b54259}{%
+           family={Bourreau},
+           familyi={B\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=265d14877c1cf8c869e1d654780b040b}{%
+           family={Caffarra},
+           familyi={C\bibinitperiod},
+           given={Cristina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1dc81ce71e496df2c6662bde6f29a6c7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhijun},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=5bc94067ea6d6a274f68dfb5ee0bc094}{%
+           family={Choe},
+           familyi={C\bibinitperiod},
+           given={Chonqwoo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d7deb170de48da4aacdd5bde828e25ab}{%
+           family={Crawford},
+           familyi={C\bibinitperiod},
+           given={Gregory\bibnamedelima S},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=d706a0bc6aeca9e8466801f9cccf2534}{%
+           family={Duso},
+           familyi={D\bibinitperiod},
+           given={Tomaso},
+           giveni={T\bibinitperiod}}}%
+        {{hash=996d1de70762ca914de2c5069212d812}{%
+           family={Genakos},
+           familyi={G\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3205646997ca231f599a0974602761eb}{%
+           family={Heidhues},
+           familyi={H\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=40044ece58716df15e373dd228ffa176}{%
+           family={Peitz},
+           familyi={P\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0aec4adffac13aa5642e15e1a0cea5c9}{%
+           family={R{ø}nde},
+           familyi={R\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Centre for Economic Policy Research}%
+      }
+      \strng{namehash}{55317e152a5e3bc897d93894963a6f98}
+      \strng{fullhash}{4b0426a4052cbae0530e539e9f809b2e}
+      \strng{fullhashraw}{4b0426a4052cbae0530e539e9f809b2e}
+      \strng{bibnamehash}{55317e152a5e3bc897d93894963a6f98}
+      \strng{authorbibnamehash}{55317e152a5e3bc897d93894963a6f98}
+      \strng{authornamehash}{55317e152a5e3bc897d93894963a6f98}
+      \strng{authorfullhash}{4b0426a4052cbae0530e539e9f809b2e}
+      \strng{authorfullhashraw}{4b0426a4052cbae0530e539e9f809b2e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Google/Fitbit will monetise health data and harm consumers}
+      \field{year}{2020}
+    \endentry
+    \entry{bsd2022critical}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c539e03be7b269c8a84f85437bc8d298}{%
+           family={BSD},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{c539e03be7b269c8a84f85437bc8d298}
+      \strng{fullhash}{c539e03be7b269c8a84f85437bc8d298}
+      \strng{fullhashraw}{c539e03be7b269c8a84f85437bc8d298}
+      \strng{bibnamehash}{c539e03be7b269c8a84f85437bc8d298}
+      \strng{authorbibnamehash}{c539e03be7b269c8a84f85437bc8d298}
+      \strng{authornamehash}{c539e03be7b269c8a84f85437bc8d298}
+      \strng{authorfullhash}{c539e03be7b269c8a84f85437bc8d298}
+      \strng{authorfullhashraw}{c539e03be7b269c8a84f85437bc8d298}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bi-State Development}
+      \field{title}{Critical illness insurance}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.bistatedev.org/wp-content/uploads/2021/09/BP210467-2022-Open-Enrollment-Benefits-Guide-Union.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.bistatedev.org/wp-content/uploads/2021/09/BP210467-2022-Open-Enrollment-Benefits-Guide-Union.pdf
+      \endverb
+    \endentry
+    \entry{clhia2024flip}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=8be9dc6aef1b697db0aba76a80dfcc55}{%
+           family={{Canadian Life and Health Insurance Association}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Canadian Life}%
+        {Health Insurance Association}%
+      }
+      \strng{namehash}{8be9dc6aef1b697db0aba76a80dfcc55}
+      \strng{fullhash}{8be9dc6aef1b697db0aba76a80dfcc55}
+      \strng{fullhashraw}{8be9dc6aef1b697db0aba76a80dfcc55}
+      \strng{bibnamehash}{8be9dc6aef1b697db0aba76a80dfcc55}
+      \strng{authorbibnamehash}{8be9dc6aef1b697db0aba76a80dfcc55}
+      \strng{authornamehash}{8be9dc6aef1b697db0aba76a80dfcc55}
+      \strng{authorfullhash}{8be9dc6aef1b697db0aba76a80dfcc55}
+      \strng{authorfullhashraw}{8be9dc6aef1b697db0aba76a80dfcc55}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ACCAP - Consumer Information - A Guide to Critical Illness Insurance}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb http://clhia.uberflip.com/i/1516153-a-guide-to-critical-illness-insurance/3
+      \endverb
+      \verb{url}
+      \verb http://clhia.uberflip.com/i/1516153-a-guide-to-critical-illness-insurance/3
+      \endverb
+    \endentry
+    \entry{crainich2017self}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=7346604a41baa98b2a6a82c456a26566}{%
+           family={Crainich},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{7346604a41baa98b2a6a82c456a26566}
+      \strng{fullhash}{7346604a41baa98b2a6a82c456a26566}
+      \strng{fullhashraw}{7346604a41baa98b2a6a82c456a26566}
+      \strng{bibnamehash}{7346604a41baa98b2a6a82c456a26566}
+      \strng{authorbibnamehash}{7346604a41baa98b2a6a82c456a26566}
+      \strng{authornamehash}{7346604a41baa98b2a6a82c456a26566}
+      \strng{authorfullhash}{7346604a41baa98b2a6a82c456a26566}
+      \strng{authorfullhashraw}{7346604a41baa98b2a6a82c456a26566}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Risk and Insurance}
+      \field{number}{1}
+      \field{title}{Self-Insurance With Genetic Testing Tools}
+      \field{volume}{84}
+      \field{year}{2017}
+      \field{pages}{73\bibrangedash 94}
+      \range{pages}{22}
+    \endentry
+    \entry{cree2022new}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=e1d351bb8e20a007cf55ad9fe6d30a4f}{%
+           family={Cree},
+           familyi={C\bibinitperiod},
+           given={Bruce\bibnamedelima AC},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9adbc66eecdedd87efefc2e5baa57e64}{%
+           family={Hartung},
+           familyi={H\bibinitperiod},
+           given={Hans-Peter},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=792b4759cafd310ea2c7f597e3c4bd34}{%
+           family={Barnett},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {LWW}%
+      }
+      \strng{namehash}{06870ff8eae0f83ec9b9bbcda9ec0541}
+      \strng{fullhash}{06870ff8eae0f83ec9b9bbcda9ec0541}
+      \strng{fullhashraw}{06870ff8eae0f83ec9b9bbcda9ec0541}
+      \strng{bibnamehash}{06870ff8eae0f83ec9b9bbcda9ec0541}
+      \strng{authorbibnamehash}{06870ff8eae0f83ec9b9bbcda9ec0541}
+      \strng{authornamehash}{06870ff8eae0f83ec9b9bbcda9ec0541}
+      \strng{authorfullhash}{06870ff8eae0f83ec9b9bbcda9ec0541}
+      \strng{authorfullhashraw}{06870ff8eae0f83ec9b9bbcda9ec0541}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Current Opinion in Neurology}
+      \field{number}{3}
+      \field{title}{New drugs for multiple sclerosis: new treatment algorithms}
+      \field{volume}{35}
+      \field{year}{2022}
+      \field{pages}{262\bibrangedash 270}
+      \range{pages}{9}
+    \endentry
+    \entry{crocker1986efficiency}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=141f1a1d4e74027347b939115cc96188}{%
+           family={Crocker},
+           familyi={C\bibinitperiod},
+           given={Keith\bibnamedelima J},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0f7f516e2c395f649c012322cd18350a}{%
+           family={Snow},
+           familyi={S\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The University of Chicago Press}%
+      }
+      \strng{namehash}{da13ac063d2fe7c9fb87824beea24378}
+      \strng{fullhash}{da13ac063d2fe7c9fb87824beea24378}
+      \strng{fullhashraw}{da13ac063d2fe7c9fb87824beea24378}
+      \strng{bibnamehash}{da13ac063d2fe7c9fb87824beea24378}
+      \strng{authorbibnamehash}{da13ac063d2fe7c9fb87824beea24378}
+      \strng{authornamehash}{da13ac063d2fe7c9fb87824beea24378}
+      \strng{authorfullhash}{da13ac063d2fe7c9fb87824beea24378}
+      \strng{authorfullhashraw}{da13ac063d2fe7c9fb87824beea24378}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{2}
+      \field{title}{The efficiency effects of categorical discrimination in the insurance industry}
+      \field{volume}{94}
+      \field{year}{1986}
+      \field{pages}{321\bibrangedash 344}
+      \range{pages}{24}
+    \endentry
+    \entry{dionne2014economic}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=8b104496a3df3a5b7e3e45fec8d9ac74}{%
+           family={Dionne},
+           familyi={D\bibinitperiod},
+           given={Georges},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b933e5aba2ad546c1bd3d423801b4674}{%
+           family={Rothschild},
+           familyi={R\bibinitperiod},
+           given={Casey},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ff833ffe00a7f1210d85d949cb30a330}
+      \strng{fullhash}{ff833ffe00a7f1210d85d949cb30a330}
+      \strng{fullhashraw}{ff833ffe00a7f1210d85d949cb30a330}
+      \strng{bibnamehash}{ff833ffe00a7f1210d85d949cb30a330}
+      \strng{authorbibnamehash}{ff833ffe00a7f1210d85d949cb30a330}
+      \strng{authornamehash}{ff833ffe00a7f1210d85d949cb30a330}
+      \strng{authorfullhash}{ff833ffe00a7f1210d85d949cb30a330}
+      \strng{authorfullhashraw}{ff833ffe00a7f1210d85d949cb30a330}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Geneva Risk and Insurance Review}
+      \field{title}{Economic effects of risk classification bans}
+      \field{volume}{39}
+      \field{year}{2014}
+      \field{pages}{184\bibrangedash 221}
+      \range{pages}{38}
+    \endentry
+    \entry{doherty1996adverse}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=44fed03300a9cdce97416b847d49413c}{%
+           family={Doherty},
+           familyi={D\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2650803f158bc253aa54794500387148}{%
+           family={Thistle},
+           familyi={T\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{325221b5818c251b71518fad79fc47c9}
+      \strng{fullhash}{325221b5818c251b71518fad79fc47c9}
+      \strng{fullhashraw}{325221b5818c251b71518fad79fc47c9}
+      \strng{bibnamehash}{325221b5818c251b71518fad79fc47c9}
+      \strng{authorbibnamehash}{325221b5818c251b71518fad79fc47c9}
+      \strng{authornamehash}{325221b5818c251b71518fad79fc47c9}
+      \strng{authorfullhash}{325221b5818c251b71518fad79fc47c9}
+      \strng{authorfullhashraw}{325221b5818c251b71518fad79fc47c9}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{number}{1}
+      \field{title}{Adverse selection with endogenous information in insurance markets}
+      \field{volume}{63}
+      \field{year}{1996}
+      \field{pages}{83\bibrangedash 102}
+      \range{pages}{20}
+    \endentry
+    \entry{doherty1995severity}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=e8053393925d9a19d1fa1d7dde5bf219}{%
+           family={Doherty},
+           familyi={D\bibinitperiod},
+           given={Neil\bibnamedelima A},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=d404c401f6f6f2af117d0af25bf8c8ff}{%
+           family={Schlesinger},
+           familyi={S\bibinitperiod},
+           given={Harris},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{c5573db6aa0fd1699449a7f0157ab989}
+      \strng{fullhash}{c5573db6aa0fd1699449a7f0157ab989}
+      \strng{fullhashraw}{c5573db6aa0fd1699449a7f0157ab989}
+      \strng{bibnamehash}{c5573db6aa0fd1699449a7f0157ab989}
+      \strng{authorbibnamehash}{c5573db6aa0fd1699449a7f0157ab989}
+      \strng{authornamehash}{c5573db6aa0fd1699449a7f0157ab989}
+      \strng{authorfullhash}{c5573db6aa0fd1699449a7f0157ab989}
+      \strng{authorfullhashraw}{c5573db6aa0fd1699449a7f0157ab989}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Risk and Insurance}
+      \field{title}{Severity risk and the adverse selection of frequency risk}
+      \field{year}{1995}
+      \field{pages}{649\bibrangedash 665}
+      \range{pages}{17}
+    \endentry
+    \entry{finkelstein2004adverse}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=8302593e3b893aa848cec33d5fabb13f}{%
+           family={Finkelstein},
+           familyi={F\bibinitperiod},
+           given={Amy},
+           giveni={A\bibinitperiod}}}%
+        {{hash=88ad4496730271592693b12b5a0b0e20}{%
+           family={Poterba},
+           familyi={P\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The University of Chicago Press}%
+      }
+      \strng{namehash}{5fc04fb43800c3126adc4626a3302060}
+      \strng{fullhash}{5fc04fb43800c3126adc4626a3302060}
+      \strng{fullhashraw}{5fc04fb43800c3126adc4626a3302060}
+      \strng{bibnamehash}{5fc04fb43800c3126adc4626a3302060}
+      \strng{authorbibnamehash}{5fc04fb43800c3126adc4626a3302060}
+      \strng{authornamehash}{5fc04fb43800c3126adc4626a3302060}
+      \strng{authorfullhash}{5fc04fb43800c3126adc4626a3302060}
+      \strng{authorfullhashraw}{5fc04fb43800c3126adc4626a3302060}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{1}
+      \field{title}{Adverse selection in insurance markets: Policyholder evidence from the UK annuity market}
+      \field{volume}{112}
+      \field{year}{2004}
+      \field{pages}{183\bibrangedash 208}
+      \range{pages}{26}
+    \endentry
+    \entry{flachenecker2017new}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=082da718c07dbfcc55c72bd735741613}{%
+           family={Flachenecker},
+           familyi={F\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a48654e0de07b3dc59425c120c370bf3}{%
+           family={Kobelt},
+           familyi={K\bibinitperiod},
+           given={Gisela},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d887a38412697ced1747fb02eb2023c2}{%
+           family={Berg},
+           familyi={B\bibinitperiod},
+           given={Jenny},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f99a51e8fdadbe1dbeebdfa08bbc6a8f}{%
+           family={Capsa},
+           familyi={C\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+        {{hash=139e2a04b7f91298fdbdea3df7bf2039}{%
+           family={Gannedahl},
+           familyi={G\bibinitperiod},
+           given={Mia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=53f9247a6da6a0ae48ed054005a497ab}{%
+           family={Platform},
+           familyi={P\bibinitperiod},
+           given={European\bibnamedelimb Multiple\bibnamedelima Sclerosis},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications Sage UK: London, England}%
+      }
+      \strng{namehash}{4ed86d4ca2769d3d77221a6d2125018e}
+      \strng{fullhash}{3ccb21ee47135b2d13a83dc6cf5fc196}
+      \strng{fullhashraw}{3ccb21ee47135b2d13a83dc6cf5fc196}
+      \strng{bibnamehash}{4ed86d4ca2769d3d77221a6d2125018e}
+      \strng{authorbibnamehash}{4ed86d4ca2769d3d77221a6d2125018e}
+      \strng{authornamehash}{4ed86d4ca2769d3d77221a6d2125018e}
+      \strng{authorfullhash}{3ccb21ee47135b2d13a83dc6cf5fc196}
+      \strng{authorfullhashraw}{3ccb21ee47135b2d13a83dc6cf5fc196}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Multiple Sclerosis Journal}
+      \field{number}{2\_suppl}
+      \field{title}{New insights into the burden and costs of multiple sclerosis in Europe: results for Germany}
+      \field{volume}{23}
+      \field{year}{2017}
+      \field{pages}{78\bibrangedash 90}
+      \range{pages}{13}
+    \endentry
+    \entry{gemmo2019privacy}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=20a0e4a4a1b4529190f5759386239df4}{%
+           family={Gemmo},
+           familyi={G\bibinitperiod},
+           given={Irina},
+           giveni={I\bibinitperiod}}}%
+        {{hash=b10250f62525904cd579ca5978105eed}{%
+           family={Browne},
+           familyi={B\bibinitperiod},
+           given={Mark\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=fb1a75fe9303d15ba6e89f485fb4ef30}{%
+           family={Gründl},
+           familyi={G\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{328338b5f2f82b9de96c3a199d527ded}
+      \strng{fullhash}{328338b5f2f82b9de96c3a199d527ded}
+      \strng{fullhashraw}{328338b5f2f82b9de96c3a199d527ded}
+      \strng{bibnamehash}{328338b5f2f82b9de96c3a199d527ded}
+      \strng{authorbibnamehash}{328338b5f2f82b9de96c3a199d527ded}
+      \strng{authornamehash}{328338b5f2f82b9de96c3a199d527ded}
+      \strng{authorfullhash}{328338b5f2f82b9de96c3a199d527ded}
+      \strng{authorfullhashraw}{328338b5f2f82b9de96c3a199d527ded}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Available at SSRN 3480629}
+      \field{title}{Privacy concerns in insurance markets: implications for market equilibria and social welfare}
+      \field{year}{2019}
+    \endentry
+    \entry{ghasemi2017multiple}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=e0e22f1432bbbe2b3bb154b728f50a8c}{%
+           family={Ghasemi},
+           familyi={G\bibinitperiod},
+           given={Nazem},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9e69d4ba61a48890bbb689cead7523f2}{%
+           family={Razavi},
+           familyi={R\bibinitperiod},
+           given={Shahnaz},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3123c73c5a55ed2aa247a8d5e13c9115}{%
+           family={Nikzad},
+           familyi={N\bibinitperiod},
+           given={Elham},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royan Institute}%
+      }
+      \strng{namehash}{cc020902a40e40151b387480db686682}
+      \strng{fullhash}{cc020902a40e40151b387480db686682}
+      \strng{fullhashraw}{cc020902a40e40151b387480db686682}
+      \strng{bibnamehash}{cc020902a40e40151b387480db686682}
+      \strng{authorbibnamehash}{cc020902a40e40151b387480db686682}
+      \strng{authornamehash}{cc020902a40e40151b387480db686682}
+      \strng{authorfullhash}{cc020902a40e40151b387480db686682}
+      \strng{authorfullhashraw}{cc020902a40e40151b387480db686682}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cell Journal (Yakhteh)}
+      \field{number}{1}
+      \field{title}{Multiple sclerosis: pathogenesis, symptoms, diagnoses and cell-based therapy}
+      \field{volume}{19}
+      \field{year}{2017}
+      \field{pages}{1}
+      \range{pages}{1}
+    \endentry
+    \entry{hansemerkur2024gliedertaxe}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b44412b0cbf99d25e2c05b8fc7e6b994}{%
+           family={{HanseMerkur}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{b44412b0cbf99d25e2c05b8fc7e6b994}
+      \strng{fullhash}{b44412b0cbf99d25e2c05b8fc7e6b994}
+      \strng{fullhashraw}{b44412b0cbf99d25e2c05b8fc7e6b994}
+      \strng{bibnamehash}{b44412b0cbf99d25e2c05b8fc7e6b994}
+      \strng{authorbibnamehash}{b44412b0cbf99d25e2c05b8fc7e6b994}
+      \strng{authornamehash}{b44412b0cbf99d25e2c05b8fc7e6b994}
+      \strng{authorfullhash}{b44412b0cbf99d25e2c05b8fc7e6b994}
+      \strng{authorfullhashraw}{b44412b0cbf99d25e2c05b8fc7e6b994}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gliedertaxe und Invalidät}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.hansemerkur.de/unfallversicherung/gliedertaxe-invaliditaet
+      \endverb
+      \verb{url}
+      \verb https://www.hansemerkur.de/unfallversicherung/gliedertaxe-invaliditaet
+      \endverb
+    \endentry
+    \entry{hoel2006genetic}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=3222577dcbfb24064ca0cc5a1e62c09e}{%
+           family={Hoel},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=36a28241ca0b2766276a6c685a5b81db}{%
+           family={Iversen},
+           familyi={I\bibinitperiod},
+           given={Tor},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b745c4a26dfdfa6ef5b61ac6eaf16396}{%
+           family={Nilssen},
+           familyi={N\bibinitperiod},
+           given={Tore},
+           giveni={T\bibinitperiod}}}%
+        {{hash=90ceef2ff229db4b4707d53c022166b7}{%
+           family={Vislie},
+           familyi={V\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{bbe7cee06ce0c6d64b764376cffc237c}
+      \strng{fullhash}{34624b3eb2a6abd55036377e2cae907b}
+      \strng{fullhashraw}{34624b3eb2a6abd55036377e2cae907b}
+      \strng{bibnamehash}{bbe7cee06ce0c6d64b764376cffc237c}
+      \strng{authorbibnamehash}{bbe7cee06ce0c6d64b764376cffc237c}
+      \strng{authornamehash}{bbe7cee06ce0c6d64b764376cffc237c}
+      \strng{authorfullhash}{34624b3eb2a6abd55036377e2cae907b}
+      \strng{authorfullhashraw}{34624b3eb2a6abd55036377e2cae907b}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Health Economics}
+      \field{number}{5}
+      \field{title}{Genetic testing in competitive insurance markets with repulsion from chance: A welfare analysis}
+      \field{volume}{25}
+      \field{year}{2006}
+      \field{pages}{847\bibrangedash 860}
+      \range{pages}{14}
+    \endentry
+    \entry{hoy2003impact}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=fcaf6bc4178690f0a5cf873f83f77086}{%
+           family={Hoy},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f513e79d52301e00ba3b86bcb056ddd4}{%
+           family={Orsi},
+           familyi={O\bibinitperiod},
+           given={Fabienne},
+           giveni={F\bibinitperiod}}}%
+        {{hash=458239cc29db3343cb3756b2f5ddcc05}{%
+           family={Eisinger},
+           familyi={E\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+        {{hash=846b5f0d1a5b3d8fb9a8bb15793368a0}{%
+           family={Moatti},
+           familyi={M\bibinitperiod},
+           given={Jean\bibnamedelima Paul},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4e337a208578507a735d4b9ce558ed59}
+      \strng{fullhash}{f2eb7758764c8398f5e53b1fea651c34}
+      \strng{fullhashraw}{f2eb7758764c8398f5e53b1fea651c34}
+      \strng{bibnamehash}{4e337a208578507a735d4b9ce558ed59}
+      \strng{authorbibnamehash}{4e337a208578507a735d4b9ce558ed59}
+      \strng{authornamehash}{4e337a208578507a735d4b9ce558ed59}
+      \strng{authorfullhash}{f2eb7758764c8398f5e53b1fea651c34}
+      \strng{authorfullhashraw}{f2eb7758764c8398f5e53b1fea651c34}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Geneva Papers on Risk and Insurance-Issues and Practice}
+      \field{number}{2}
+      \field{title}{The impact of genetic testing on healthcare insurance}
+      \field{volume}{28}
+      \field{year}{2003}
+      \field{pages}{203\bibrangedash 221}
+      \range{pages}{19}
+    \endentry
+    \entry{kimball1990precautionary}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0bb98520306c5d76f02df1427a7cdd6f}{%
+           family={Kimball},
+           familyi={K\bibinitperiod},
+           given={Miles\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0bb98520306c5d76f02df1427a7cdd6f}
+      \strng{fullhash}{0bb98520306c5d76f02df1427a7cdd6f}
+      \strng{fullhashraw}{0bb98520306c5d76f02df1427a7cdd6f}
+      \strng{bibnamehash}{0bb98520306c5d76f02df1427a7cdd6f}
+      \strng{authorbibnamehash}{0bb98520306c5d76f02df1427a7cdd6f}
+      \strng{authornamehash}{0bb98520306c5d76f02df1427a7cdd6f}
+      \strng{authorfullhash}{0bb98520306c5d76f02df1427a7cdd6f}
+      \strng{authorfullhashraw}{0bb98520306c5d76f02df1427a7cdd6f}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{1}
+      \field{title}{Precautionary saving in the small and in the large}
+      \field{volume}{58}
+      \field{year}{1990}
+      \field{pages}{53\bibrangedash 73}
+      \range{pages}{21}
+    \endentry
+    \entry{li2019effect}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=47a5fbc7a1b0a2784297c0ca076aada7}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Anqi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=de403ad336e8ec3c8e6d027a1a5405d6}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Yeliang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fe920e945a6d8874d464d610dfa3fd12}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Xue},
+           giveni={X\bibinitperiod}}}%
+        {{hash=4aece45f33dc0b8f8adde7475d9dbe31}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhonghua},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{5297c6e7eb88e82a15630680778ec6e7}
+      \strng{fullhash}{6dcf0cd1d6cde00328b59dd77550ec2a}
+      \strng{fullhashraw}{6dcf0cd1d6cde00328b59dd77550ec2a}
+      \strng{bibnamehash}{5297c6e7eb88e82a15630680778ec6e7}
+      \strng{authorbibnamehash}{5297c6e7eb88e82a15630680778ec6e7}
+      \strng{authornamehash}{5297c6e7eb88e82a15630680778ec6e7}
+      \strng{authorfullhash}{6dcf0cd1d6cde00328b59dd77550ec2a}
+      \strng{authorfullhashraw}{6dcf0cd1d6cde00328b59dd77550ec2a}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Environmental Research and Public Health}
+      \field{number}{24}
+      \field{title}{Effect of critical illness insurance on household catastrophic health expenditure: the latest evidence from the National Health Service Survey in China}
+      \field{volume}{16}
+      \field{year}{2019}
+      \field{pages}{5086}
+      \range{pages}{1}
+    \endentry
+    \entry{ligon2008adverse}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b97950565b58aaeb7824538c6bdb3467}{%
+           family={Ligon},
+           familyi={L\bibinitperiod},
+           given={James\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=93e5095e88f45e8ad3cf1326a48fc59e}{%
+           family={Thistle},
+           familyi={T\bibinitperiod},
+           given={Paul\bibnamedelima D},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{17c67bf9fcb0010fe8bd04fdcfcfdbc5}
+      \strng{fullhash}{17c67bf9fcb0010fe8bd04fdcfcfdbc5}
+      \strng{fullhashraw}{17c67bf9fcb0010fe8bd04fdcfcfdbc5}
+      \strng{bibnamehash}{17c67bf9fcb0010fe8bd04fdcfcfdbc5}
+      \strng{authorbibnamehash}{17c67bf9fcb0010fe8bd04fdcfcfdbc5}
+      \strng{authornamehash}{17c67bf9fcb0010fe8bd04fdcfcfdbc5}
+      \strng{authorfullhash}{17c67bf9fcb0010fe8bd04fdcfcfdbc5}
+      \strng{authorfullhashraw}{17c67bf9fcb0010fe8bd04fdcfcfdbc5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Risk and Insurance}
+      \field{number}{4}
+      \field{title}{Adverse selection with frequency and severity risk: Alternative risk-sharing provisions}
+      \field{volume}{75}
+      \field{year}{2008}
+      \field{pages}{825\bibrangedash 846}
+      \range{pages}{22}
+    \endentry
+    \entry{miyazaki1977rat}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0b7405c7c92d999e3e46bb53355ae26d}{%
+           family={Miyazaki},
+           familyi={M\bibinitperiod},
+           given={Hajime},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{0b7405c7c92d999e3e46bb53355ae26d}
+      \strng{fullhash}{0b7405c7c92d999e3e46bb53355ae26d}
+      \strng{fullhashraw}{0b7405c7c92d999e3e46bb53355ae26d}
+      \strng{bibnamehash}{0b7405c7c92d999e3e46bb53355ae26d}
+      \strng{authorbibnamehash}{0b7405c7c92d999e3e46bb53355ae26d}
+      \strng{authornamehash}{0b7405c7c92d999e3e46bb53355ae26d}
+      \strng{authorfullhash}{0b7405c7c92d999e3e46bb53355ae26d}
+      \strng{authorfullhashraw}{0b7405c7c92d999e3e46bb53355ae26d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Bell Journal of Economics}
+      \field{title}{The rat race and internal labor markets}
+      \field{year}{1977}
+      \field{pages}{394\bibrangedash 418}
+      \range{pages}{25}
+    \endentry
+    \entry{mossin1968aspects}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c62853668bdb2e78376578bdeb97ab6d}{%
+           family={Mossin},
+           familyi={M\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The University of Chicago Press}%
+      }
+      \strng{namehash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{fullhash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{fullhashraw}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{bibnamehash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{authorbibnamehash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{authornamehash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{authorfullhash}{c62853668bdb2e78376578bdeb97ab6d}
+      \strng{authorfullhashraw}{c62853668bdb2e78376578bdeb97ab6d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{number}{4, Part 1}
+      \field{title}{Aspects of rational insurance purchasing}
+      \field{volume}{76}
+      \field{year}{1968}
+      \field{pages}{553\bibrangedash 568}
+      \range{pages}{16}
+    \endentry
+    \entry{ninds2015ms}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=e000076391dd935a7d15bb37e3e9e50d}{%
+           family={{National Institute of Neurological Disorders and Stroke}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e000076391dd935a7d15bb37e3e9e50d}
+      \strng{fullhash}{e000076391dd935a7d15bb37e3e9e50d}
+      \strng{fullhashraw}{e000076391dd935a7d15bb37e3e9e50d}
+      \strng{bibnamehash}{e000076391dd935a7d15bb37e3e9e50d}
+      \strng{authorbibnamehash}{e000076391dd935a7d15bb37e3e9e50d}
+      \strng{authornamehash}{e000076391dd935a7d15bb37e3e9e50d}
+      \strng{authorfullhash}{e000076391dd935a7d15bb37e3e9e50d}
+      \strng{authorfullhashraw}{e000076391dd935a7d15bb37e3e9e50d}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://web.archive.org/web/20160213025406/http://www.ninds.nih.gov/disorders/multiple_sclerosis/multiple_sclerosis.htm}}
+      \field{note}{[Accessed 20-03-2024]}
+      \field{title}{NINDS Multiple Sclerosis Information Page}
+      \field{year}{2015}
+    \endentry
+    \entry{nill2019use}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=20343a1d155e9054e0e8d46b2f1776b9}{%
+           family={Nill},
+           familyi={N\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e923db3756de2cf635106f2093c83810}{%
+           family={Laczniak},
+           familyi={L\bibinitperiod},
+           given={Gene},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2650803f158bc253aa54794500387148}{%
+           family={Thistle},
+           familyi={T\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f4af3cd6f4c9b2553861c19508405a43}
+      \strng{fullhash}{f4af3cd6f4c9b2553861c19508405a43}
+      \strng{fullhashraw}{f4af3cd6f4c9b2553861c19508405a43}
+      \strng{bibnamehash}{f4af3cd6f4c9b2553861c19508405a43}
+      \strng{authorbibnamehash}{f4af3cd6f4c9b2553861c19508405a43}
+      \strng{authornamehash}{f4af3cd6f4c9b2553861c19508405a43}
+      \strng{authorfullhash}{f4af3cd6f4c9b2553861c19508405a43}
+      \strng{authorfullhashraw}{f4af3cd6f4c9b2553861c19508405a43}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business Ethics}
+      \field{number}{1}
+      \field{title}{The use of genetic testing information in the insurance industry: an ethical and societal analysis of public policy options}
+      \field{volume}{156}
+      \field{year}{2019}
+      \field{pages}{105\bibrangedash 121}
+      \range{pages}{17}
+    \endentry
+    \entry{okuda2009genotype}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=29c6f620a84707b5b41b6194bcc77ab6}{%
+           family={Okuda},
+           familyi={O\bibinitperiod},
+           given={DT},
+           giveni={D\bibinitperiod}}}%
+        {{hash=00999b5a0bb8f1b478779907ecac4d0d}{%
+           family={Srinivasan},
+           familyi={S\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7a1b6f858a64e640aeb0de630047428a}{%
+           family={Oksenberg},
+           familyi={O\bibinitperiod},
+           given={JR},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fe37782b73b5a29b0a8b087c5544d02d}{%
+           family={Goodin},
+           familyi={G\bibinitperiod},
+           given={DS},
+           giveni={D\bibinitperiod}}}%
+        {{hash=18c6e02f712e914b6657fbcd6eaff3df}{%
+           family={Baranzini},
+           familyi={B\bibinitperiod},
+           given={SE},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4ce4e381fe937ac7dbdc9ed7baee72a8}{%
+           family={Beheshtian},
+           familyi={B\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d8d40eb5fc9fce229ce919fb135294a3}{%
+           family={Waubant},
+           familyi={W\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e4446a0da9712c32cc84d0b94280a100}{%
+           family={Zamvil},
+           familyi={Z\bibinitperiod},
+           given={SS},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4296381cf66513f01ba6a902046707d3}{%
+           family={Leppert},
+           familyi={L\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=92baeb4a347459181a83559587b95114}{%
+           family={Qualley},
+           familyi={Q\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{dc456da9c0b580efeb856b9dbdaef259}
+      \strng{fullhash}{cf66faf26304fcedbfd1653261770d49}
+      \strng{fullhashraw}{cf66faf26304fcedbfd1653261770d49}
+      \strng{bibnamehash}{dc456da9c0b580efeb856b9dbdaef259}
+      \strng{authorbibnamehash}{dc456da9c0b580efeb856b9dbdaef259}
+      \strng{authornamehash}{dc456da9c0b580efeb856b9dbdaef259}
+      \strng{authorfullhash}{cf66faf26304fcedbfd1653261770d49}
+      \strng{authorfullhashraw}{cf66faf26304fcedbfd1653261770d49}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Brain}
+      \field{number}{1}
+      \field{title}{Genotype--phenotype correlations in multiple sclerosis: HLA genes influence disease severity inferred by 1HMR spectroscopy and MRI measures}
+      \field{volume}{132}
+      \field{year}{2009}
+      \field{pages}{250\bibrangedash 259}
+      \range{pages}{10}
+    \endentry
+    \entry{pasquale2013protecting}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=332ef452a3d2199c82fb484007dc0803}{%
+           family={Pasquale},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f42e03893c6bf0d73810bc8189f3a897}{%
+           family={Ragone},
+           familyi={R\bibinitperiod},
+           given={Tara\bibnamedelima Adams},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {HeinOnline}%
+      }
+      \strng{namehash}{e698d4a6d25bf880c6dc86d4e5fbb5b2}
+      \strng{fullhash}{e698d4a6d25bf880c6dc86d4e5fbb5b2}
+      \strng{fullhashraw}{e698d4a6d25bf880c6dc86d4e5fbb5b2}
+      \strng{bibnamehash}{e698d4a6d25bf880c6dc86d4e5fbb5b2}
+      \strng{authorbibnamehash}{e698d4a6d25bf880c6dc86d4e5fbb5b2}
+      \strng{authornamehash}{e698d4a6d25bf880c6dc86d4e5fbb5b2}
+      \strng{authorfullhash}{e698d4a6d25bf880c6dc86d4e5fbb5b2}
+      \strng{authorfullhashraw}{e698d4a6d25bf880c6dc86d4e5fbb5b2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Stanford Technology Law Review}
+      \field{title}{Protecting health privacy in an era of big data processing and cloud computing}
+      \field{volume}{17}
+      \field{year}{2013}
+      \field{pages}{595}
+      \range{pages}{1}
+    \endentry
+    \entry{peter2017endogenous}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=7c1b1e03ad48ee9c2e55be71cf948a69}{%
+           family={Peter},
+           familyi={P\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8aa9f459175e7eb7a04f77246d845143}{%
+           family={Richter},
+           familyi={R\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d36e1b12d902ceb7932c9ad409e6ff30}{%
+           family={Thistle},
+           familyi={T\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e4f4d57741916f1ef95d547ece081df7}
+      \strng{fullhash}{e4f4d57741916f1ef95d547ece081df7}
+      \strng{fullhashraw}{e4f4d57741916f1ef95d547ece081df7}
+      \strng{bibnamehash}{e4f4d57741916f1ef95d547ece081df7}
+      \strng{authorbibnamehash}{e4f4d57741916f1ef95d547ece081df7}
+      \strng{authornamehash}{e4f4d57741916f1ef95d547ece081df7}
+      \strng{authorfullhash}{e4f4d57741916f1ef95d547ece081df7}
+      \strng{authorfullhashraw}{e4f4d57741916f1ef95d547ece081df7}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Health Economics}
+      \field{title}{Endogenous information, adverse selection, and prevention: Implications for genetic testing policy}
+      \field{volume}{55}
+      \field{year}{2017}
+      \field{pages}{95\bibrangedash 107}
+      \range{pages}{13}
+    \endentry
+    \entry{posey2021genetic}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=0d11fed8f4262ba9b3b4527ef129b9b7}{%
+           family={Posey},
+           familyi={P\bibinitperiod},
+           given={Lisa\bibnamedelima L},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=93e5095e88f45e8ad3cf1326a48fc59e}{%
+           family={Thistle},
+           familyi={T\bibinitperiod},
+           given={Paul\bibnamedelima D},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{681da7339e4f94f7cce67171d76e1b16}
+      \strng{fullhash}{681da7339e4f94f7cce67171d76e1b16}
+      \strng{fullhashraw}{681da7339e4f94f7cce67171d76e1b16}
+      \strng{bibnamehash}{681da7339e4f94f7cce67171d76e1b16}
+      \strng{authorbibnamehash}{681da7339e4f94f7cce67171d76e1b16}
+      \strng{authornamehash}{681da7339e4f94f7cce67171d76e1b16}
+      \strng{authorfullhash}{681da7339e4f94f7cce67171d76e1b16}
+      \strng{authorfullhashraw}{681da7339e4f94f7cce67171d76e1b16}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Health Economics}
+      \field{title}{Genetic testing and genetic discrimination: Public policy when insurance becomes “too expensive”}
+      \field{volume}{77}
+      \field{year}{2021}
+      \field{pages}{102441}
+      \range{pages}{1}
+    \endentry
+    \entry{prince2020insurancewellness}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=60e9628d4332dae313cdc8c3c5936f75}{%
+           family={Prince},
+           familyi={P\bibinitperiod},
+           given={Anya},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Michigan State University College of Law}%
+      }
+      \strng{namehash}{60e9628d4332dae313cdc8c3c5936f75}
+      \strng{fullhash}{60e9628d4332dae313cdc8c3c5936f75}
+      \strng{fullhashraw}{60e9628d4332dae313cdc8c3c5936f75}
+      \strng{bibnamehash}{60e9628d4332dae313cdc8c3c5936f75}
+      \strng{authorbibnamehash}{60e9628d4332dae313cdc8c3c5936f75}
+      \strng{authornamehash}{60e9628d4332dae313cdc8c3c5936f75}
+      \strng{authorfullhash}{60e9628d4332dae313cdc8c3c5936f75}
+      \strng{authorfullhashraw}{60e9628d4332dae313cdc8c3c5936f75}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Michigan State Law Review}
+      \field{title}{Hidden trade-offs in insurance wellness programs}
+      \field{year}{2020}
+    \endentry
+    \entry{rejda2005risk}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=de34d51f462b2e5e500707c89d8bc284}{%
+           family={Rejda},
+           familyi={R\bibinitperiod},
+           given={George\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{de34d51f462b2e5e500707c89d8bc284}
+      \strng{fullhash}{de34d51f462b2e5e500707c89d8bc284}
+      \strng{fullhashraw}{de34d51f462b2e5e500707c89d8bc284}
+      \strng{bibnamehash}{de34d51f462b2e5e500707c89d8bc284}
+      \strng{authorbibnamehash}{de34d51f462b2e5e500707c89d8bc284}
+      \strng{authornamehash}{de34d51f462b2e5e500707c89d8bc284}
+      \strng{authorfullhash}{de34d51f462b2e5e500707c89d8bc284}
+      \strng{authorfullhashraw}{de34d51f462b2e5e500707c89d8bc284}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Person Education Inc}
+      \field{title}{Risk management and insurance}
+      \field{volume}{13}
+      \field{year}{2005}
+      \field{pages}{44\bibrangedash 55}
+      \range{pages}{12}
+    \endentry
+    \entry{rothschild2011efficiency}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b933e5aba2ad546c1bd3d423801b4674}{%
+           family={Rothschild},
+           familyi={R\bibinitperiod},
+           given={Casey},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{b933e5aba2ad546c1bd3d423801b4674}
+      \strng{fullhash}{b933e5aba2ad546c1bd3d423801b4674}
+      \strng{fullhashraw}{b933e5aba2ad546c1bd3d423801b4674}
+      \strng{bibnamehash}{b933e5aba2ad546c1bd3d423801b4674}
+      \strng{authorbibnamehash}{b933e5aba2ad546c1bd3d423801b4674}
+      \strng{authornamehash}{b933e5aba2ad546c1bd3d423801b4674}
+      \strng{authorfullhash}{b933e5aba2ad546c1bd3d423801b4674}
+      \strng{authorfullhashraw}{b933e5aba2ad546c1bd3d423801b4674}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Risk and Insurance}
+      \field{number}{2}
+      \field{title}{The efficiency of categorical discrimination in insurance markets}
+      \field{volume}{78}
+      \field{year}{2011}
+      \field{pages}{267\bibrangedash 285}
+      \range{pages}{19}
+    \endentry
+    \entry{rothschild1978equilibrium}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5850362a4d1c3a7593de8f80eba0a12d}{%
+           family={Rothschild},
+           familyi={R\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d558347d5073456d9bd326d074c8c13f}{%
+           family={Stiglitz},
+           familyi={S\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{453442afe8621440e2d97802df197df2}
+      \strng{fullhash}{453442afe8621440e2d97802df197df2}
+      \strng{fullhashraw}{453442afe8621440e2d97802df197df2}
+      \strng{bibnamehash}{453442afe8621440e2d97802df197df2}
+      \strng{authorbibnamehash}{453442afe8621440e2d97802df197df2}
+      \strng{authornamehash}{453442afe8621440e2d97802df197df2}
+      \strng{authorfullhash}{453442afe8621440e2d97802df197df2}
+      \strng{authorfullhashraw}{453442afe8621440e2d97802df197df2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Uncertainty in economics}
+      \field{journaltitle}{Quarterly Journal of Economics}
+      \field{number}{4}
+      \field{title}{Equilibrium in competitive insurance markets: An essay on the economics of imperfect information}
+      \field{volume}{90}
+      \field{year}{1976}
+      \field{pages}{629\bibrangedash 647}
+      \range{pages}{19}
+    \endentry
+    \entry{schrijver1999association}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=977cc9843e95144c0bcdef8ef94d6b19}{%
+           family={Schrijver},
+           familyi={S\bibinitperiod},
+           given={HM},
+           giveni={H\bibinitperiod}}}%
+        {{hash=43732e1b9a467b0e7479c5d7470d3b0d}{%
+           family={Crusius},
+           familyi={C\bibinitperiod},
+           given={JBA},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9346b02688627a76a07d363bbf9d2a1f}{%
+           family={Uitdehaag},
+           familyi={U\bibinitperiod},
+           given={BMJ},
+           giveni={B\bibinitperiod}}}%
+        {{hash=fceba0fb18fd2b605ad0c4a37c292d52}{%
+           family={Garcia\bibnamedelima Gonzalez},
+           familyi={G\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={MA},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9f0e136fee711b18c311c42536c9c2e3}{%
+           family={Kostense},
+           familyi={K\bibinitperiod},
+           given={PJ},
+           giveni={P\bibinitperiod}}}%
+        {{hash=00c7a49231d3b7e7a612acbf48dda3d7}{%
+           family={Polman},
+           familyi={P\bibinitperiod},
+           given={CH},
+           giveni={C\bibinitperiod}}}%
+        {{hash=905aa808656dbe924d8f2c2332dace70}{%
+           family={Pena},
+           familyi={P\bibinitperiod},
+           given={AS},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AAN Enterprises}%
+      }
+      \strng{namehash}{67021d63929b5028d9a7d0e11424f8d6}
+      \strng{fullhash}{35673c34117d425897520a7bf0bb57f7}
+      \strng{fullhashraw}{35673c34117d425897520a7bf0bb57f7}
+      \strng{bibnamehash}{67021d63929b5028d9a7d0e11424f8d6}
+      \strng{authorbibnamehash}{67021d63929b5028d9a7d0e11424f8d6}
+      \strng{authornamehash}{67021d63929b5028d9a7d0e11424f8d6}
+      \strng{authorfullhash}{35673c34117d425897520a7bf0bb57f7}
+      \strng{authorfullhashraw}{35673c34117d425897520a7bf0bb57f7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neurology}
+      \field{number}{3}
+      \field{title}{Association of interleukin-1 $\beta$ and interleukin-1 receptor antagonist genes with disease severity in MS}
+      \field{volume}{52}
+      \field{year}{1999}
+      \field{pages}{595\bibrangedash 595}
+      \range{pages}{1}
+    \endentry
+    \entry{shannon1948mathematical}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=536c91678d1dde76c9acd47047556291}{%
+           family={Shannon},
+           familyi={S\bibinitperiod},
+           given={Claude\bibnamedelima E},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nokia Bell Labs}%
+      }
+      \strng{namehash}{536c91678d1dde76c9acd47047556291}
+      \strng{fullhash}{536c91678d1dde76c9acd47047556291}
+      \strng{fullhashraw}{536c91678d1dde76c9acd47047556291}
+      \strng{bibnamehash}{536c91678d1dde76c9acd47047556291}
+      \strng{authorbibnamehash}{536c91678d1dde76c9acd47047556291}
+      \strng{authornamehash}{536c91678d1dde76c9acd47047556291}
+      \strng{authorfullhash}{536c91678d1dde76c9acd47047556291}
+      \strng{authorfullhashraw}{536c91678d1dde76c9acd47047556291}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Bell System Technical Journal}
+      \field{number}{3}
+      \field{title}{A mathematical theory of communication}
+      \field{volume}{27}
+      \field{year}{1948}
+      \field{pages}{379\bibrangedash 423}
+      \range{pages}{45}
+    \endentry
+    \entry{sharpe2019telematics}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=14bfd536b13fd2325ed06357e32072de}{%
+           family={Sharpe},
+           familyi={S\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9f8efb1f990750df02854550558a842b}{%
+           family={Schaller},
+           familyi={S\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The International Council on Clean Transportation}%
+      }
+      \strng{namehash}{226ec94c0dd2d9721177ae9564569c4d}
+      \strng{fullhash}{226ec94c0dd2d9721177ae9564569c4d}
+      \strng{fullhashraw}{226ec94c0dd2d9721177ae9564569c4d}
+      \strng{bibnamehash}{226ec94c0dd2d9721177ae9564569c4d}
+      \strng{authorbibnamehash}{226ec94c0dd2d9721177ae9564569c4d}
+      \strng{authornamehash}{226ec94c0dd2d9721177ae9564569c4d}
+      \strng{authorfullhash}{226ec94c0dd2d9721177ae9564569c4d}
+      \strng{authorfullhashraw}{226ec94c0dd2d9721177ae9564569c4d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Telematics in the Canadian trucking industry}
+      \field{urlday}{16}
+      \field{urlmonth}{9}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://theicct.org/publications/telematics-canadian-trucking-industry
+      \endverb
+      \verb{url}
+      \verb https://theicct.org/publications/telematics-canadian-trucking-industry
+      \endverb
+    \endentry
+    \entry{spence1978product}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=aae176b15837266834493c7397512929}{%
+           family={Spence},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{aae176b15837266834493c7397512929}
+      \strng{fullhash}{aae176b15837266834493c7397512929}
+      \strng{fullhashraw}{aae176b15837266834493c7397512929}
+      \strng{bibnamehash}{aae176b15837266834493c7397512929}
+      \strng{authorbibnamehash}{aae176b15837266834493c7397512929}
+      \strng{authornamehash}{aae176b15837266834493c7397512929}
+      \strng{authorfullhash}{aae176b15837266834493c7397512929}
+      \strng{authorfullhashraw}{aae176b15837266834493c7397512929}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{number}{3}
+      \field{title}{Product differentiation and performance in insurance markets}
+      \field{volume}{10}
+      \field{year}{1978}
+      \field{pages}{427\bibrangedash 447}
+      \range{pages}{21}
+    \endentry
+    \entry{swan1981subrogation}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=45e7796781ed0e9d5051dc33f4abfaff}{%
+           family={Swan},
+           familyi={S\bibinitperiod},
+           given={George\bibnamedelima Steven},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {HeinOnline}%
+      }
+      \strng{namehash}{45e7796781ed0e9d5051dc33f4abfaff}
+      \strng{fullhash}{45e7796781ed0e9d5051dc33f4abfaff}
+      \strng{fullhashraw}{45e7796781ed0e9d5051dc33f4abfaff}
+      \strng{bibnamehash}{45e7796781ed0e9d5051dc33f4abfaff}
+      \strng{authorbibnamehash}{45e7796781ed0e9d5051dc33f4abfaff}
+      \strng{authornamehash}{45e7796781ed0e9d5051dc33f4abfaff}
+      \strng{authorfullhash}{45e7796781ed0e9d5051dc33f4abfaff}
+      \strng{authorfullhashraw}{45e7796781ed0e9d5051dc33f4abfaff}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ins. Counsel J.}
+      \field{title}{Subrogation in Life Insurance: Now is the Time}
+      \field{volume}{48}
+      \field{year}{1981}
+      \field{pages}{634}
+      \range{pages}{1}
+    \endentry
+    \entry{tan2025testing}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=3e9e68b7d736874de4a1d8ac454eba3b}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Kar\bibnamedelima Man},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{3e9e68b7d736874de4a1d8ac454eba3b}
+      \strng{fullhash}{3e9e68b7d736874de4a1d8ac454eba3b}
+      \strng{fullhashraw}{3e9e68b7d736874de4a1d8ac454eba3b}
+      \strng{bibnamehash}{3e9e68b7d736874de4a1d8ac454eba3b}
+      \strng{authorbibnamehash}{3e9e68b7d736874de4a1d8ac454eba3b}
+      \strng{authornamehash}{3e9e68b7d736874de4a1d8ac454eba3b}
+      \strng{authorfullhash}{3e9e68b7d736874de4a1d8ac454eba3b}
+      \strng{authorfullhashraw}{3e9e68b7d736874de4a1d8ac454eba3b}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Risk Management and Insurance Review}
+      \field{number}{1}
+      \field{title}{Testing for loss severity: Impact on loss reduction}
+      \field{volume}{28}
+      \field{year}{2025}
+      \field{pages}{150\bibrangedash 180}
+      \range{pages}{31}
+    \endentry
+    \entry{zhang2019critical}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=f5acec98b29ee91fa6b08b85a6a0adad}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=86670bc52b3b1cdc2d71b278c190d128}{%
+           family={Vanneste},
+           familyi={V\bibinitperiod},
+           given={Jacques},
+           giveni={J\bibinitperiod}}}%
+        {{hash=10f83b05ae54ea70c53c9fc7ea8017f3}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Jiaxin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a103d92bd39fc7e139e2f6779ebd15a3}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xiaoxing},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3361f474fef1167024fc9b87eba4e9d2}
+      \strng{fullhash}{1d12a83aab19f32b7eeed79f76bbaea4}
+      \strng{fullhashraw}{1d12a83aab19f32b7eeed79f76bbaea4}
+      \strng{bibnamehash}{3361f474fef1167024fc9b87eba4e9d2}
+      \strng{authorbibnamehash}{3361f474fef1167024fc9b87eba4e9d2}
+      \strng{authornamehash}{3361f474fef1167024fc9b87eba4e9d2}
+      \strng{authorfullhash}{1d12a83aab19f32b7eeed79f76bbaea4}
+      \strng{authorfullhashraw}{1d12a83aab19f32b7eeed79f76bbaea4}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Health Economics and Management}
+      \field{title}{Critical Illness Insurance to alleviate catastrophic health expenditures: New evidence from China}
+      \field{volume}{19}
+      \field{year}{2019}
+      \field{pages}{193\bibrangedash 212}
+      \range{pages}{20}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

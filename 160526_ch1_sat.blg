@@ -1,0 +1,17 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is '160526_ch1_sat.blg'
+[63] biber-darwin:342> INFO - === Sun May 17, 2026, 16:04:39
+[78] Biber.pm:421> INFO - Reading '160526_ch1_sat.bcf'
+[174] Biber.pm:1002> INFO - Found 46 citekeys in bib section 0
+[195] Biber.pm:4487> INFO - Processing section 0
+[207] Biber.pm:4678> INFO - Looking for bibtex file 'proposal.bib' for section 0
+[213] bibtex.pm:1713> INFO - LaTeX decoding ...
+[341] bibtex.pm:1519> INFO - Found BibTeX data source 'proposal.bib'
+[722] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[722] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[722] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[722] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[786] bbl.pm:676> INFO - Writing '160526_ch1_sat.bbl' with encoding 'UTF-8'
+[810] bbl.pm:779> INFO - Output to 160526_ch1_sat.bbl
+[810] Biber.pm:132> WARN - legacy month field 'Oct' in entry 'ABI_2018' is not an integer - this will probably not sort properly.
+[810] Biber.pm:134> INFO - WARNINGS: 1

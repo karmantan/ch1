@@ -1,0 +1,697 @@
+% echo 'alias buildthesis="cd \"/Users/tankarman/Library/CloudStorage/OneDrive-Personal/PhD/Thesis/Chapter 1/post_jri\" && ./build.sh"' >> ~/.zshrc
+% source ~/.zshrc
+\documentclass[natbib=false,preprint,12pt]{elsarticle}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{soul}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{array,booktabs,arydshln,xcolor}
+\usepackage{amsmath}
+\delimitershortfall=-1pt
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage[margin=2.5cm]{geometry}
+\large
+\usepackage{amssymb,amsthm} 
+\usepackage{diagbox}
+\usepackage{systeme} 
+\usepackage[parfill]{parskip}
+\usepackage[shortlabels]{enumitem}
+%\usepackage{listings}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{bbm}
+\usepackage{caption}
+\usepackage{subcaption}
+\PassOptionsToPackage{natbib=false}{elsarticle}
+\usepackage[style=authoryear,uniquename=false]{biblatex}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\newcolumntype{C}[1]{>{\Centering}m{#1}}
+\renewcommand\tabularxcolumn[1]{C{#1}}
+\usepackage[T1]{fontenc} 
+\usepackage{fouriernc}
+\usepackage{mathtools}
+\usepackage{ marvosym }
+\usepackage{makecell}
+\usepackage[toc,page]{appendix}
+\newcommand\blitz{\textup{\Lightning}}
+\large
+\usepackage{hhline}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\usepackage{appendix}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{conj}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{examples}[theorem]{Examples}
+\newtheorem{assumption}{Assumption}
+\theoremstyle{plain}
+
+
+\newtheorem{question}[theorem]{Question}
+\newtheorem{questions}[theorem]{Questions}
+
+%\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newtheoremstyle{TheoremNum}
+        {\topsep}{\topsep}              %%% space between body and thm
+        {\itshape}                      %%% Thm body font
+        {}                              %%% Indent amount (empty = no indent)
+        {\bfseries}                     %%% Thm head font
+        {.}                             %%% Punctuation after thm head
+        { }                             %%% Space after thm head
+        {\thmname{#1}\thmnote{ \bfseries #3}}%%% Thm head spec
+    \theoremstyle{TheoremNum}
+    \newtheorem{theoremn}{Theorem}
+
+
+\newtheoremstyle{CorollaryNum}
+        {\topsep}{\topsep}              %%% space between body and thm
+        {\itshape}                      %%% Thm body font
+        {}                              %%% Indent amount (empty = no indent)
+        {\bfseries}                     %%% Thm head font
+        {.}                             %%% Punctuation after thm head
+        { }                             %%% Space after thm head
+        {\thmname{#1}\thmnote{ \bfseries #3}}%%% Thm head spec
+    \theoremstyle{CorollaryNum}
+    \newtheorem{corollaryn}{Corollary}
+
+\newtheoremstyle{PropositionNum}
+        {\topsep}{\topsep}              %%% space between body and thm
+        {\itshape}                      %%% Thm body font
+        {}                              %%% Indent amount (empty = no indent)
+        {\bfseries}                     %%% Thm head font
+        {.}                             %%% Punctuation after thm head
+        { }                             %%% Space after thm head
+        {\thmname{#1}\thmnote{ \bfseries #3}}%%% Thm head spec
+    \theoremstyle{PropositionNum}
+    \newtheorem{propn}{Proposition}
+
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+    \newtheoremstyle{ConjectureNum}
+        {\topsep}{\topsep}              %%% space between body and thm
+        {\itshape}                      %%% Thm body font
+        {}                              %%% Indent amount (empty = no indent)
+        {\bfseries}                     %%% Thm head font
+        {.}                             %%% Punctuation after thm head
+        { }                             %%% Space after thm head
+        {\thmname{#1}\thmnote{ \bfseries #3}}%%% Thm head spec
+    \theoremstyle{TheoremNum}
+    \newtheorem{conjn}{Conjecture}
+
+    
+\newcommand{\argmin}{\arg\!\min}
+\newcommand{\argmax}{\arg\!\max}
+
+    
+\addbibresource{proposal.bib}
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\linespread{1}
+
+\makeatletter
+\def\@author#1{\g@addto@macro\elsauthors{\normalsize%
+    \def\baselinestretch{1}%
+    \upshape\authorsep#1\unskip\textsuperscript{%
+      \ifx\@fnmark\@empty\else\unskip\sep\@fnmark\let\sep=,\fi
+      \ifx\@corref\@empty\else\unskip\sep\@corref\let\sep=,\fi
+      }%
+    \def\authorsep{\unskip,\space}%
+    \global\let\@fnmark\@empty
+    \global\let\@corref\@empty  %% Added
+    \global\let\sep\@empty}%
+    \@eadauthor={#1}
+}
+\def\ps@pprintTitle{%
+  \let\@oddhead\@empty
+  \let\@evenhead\@empty
+  \let\@oddfoot\@empty
+  \let\@evenfoot\@oddfoot
+}
+\makeatother
+
+%opening
+\title{Genetic testing: Assessing severity and implications for health insurance}
+
+
+\author{Kar Man Tan\corref{cor1}\fnref{fn1}}
+%\ead{tan@finance.uni-frankfurt.de}
+\cortext[cor1]{Corresponding author: tan@finance.uni-frankfurt.de}
+\fntext[fn1]{Department of Finance, Faculty of Economics and Business, Goethe University Frankfurt \\
+Theodor-W.-Adorno Platz 3, 60323, Frankfurt am Main\\ \\
+The authors are grateful for the helpful comments and suggestions received from Richard Peter, Jan-Christian Fey, Faith Neale, Petra Steinorth, Volker Benndorf, Ferdinand von Siemens and Florian Hett. The authors also wish to thank participants at the American Risk and Insurance Annual Meeting 2022 in Long Beach and Deutscher Verein für Versicherungswissenschaft Jahrestagung 2022. Financial support from the International Center for Insurance Regulation is gratefully acknowledged.}
+
+
+\author{Helmut Gründl\fnref{fn1}}
+\ead{gruendl@finance.uni-frankfurt.de}
+
+
+%\fntext[fn2]{Lecturer}
+\address{Department of Finance, Faculty of Economics and Business, Goethe University Frankfurt \\ Theodor-W.-Adorno Platz 3, 60323, Frankfurt am Main}
+
+
+\begin{abstract}
+
+\footnotesize{We theoretically analyze how identifying severity through genetic tests impacts insurance purchases under various information regimes. Individuals test when insurers offer contracts where indemnities exceeds actual losses, and purchase full coverage. If insurers offer contracts covering average losses, testing is foregone leading to inefficiencies: high severity individuals are under-insured while low severity individuals are over-insured. If insurers can observe test results and offer contracts which limit payments to actual losses, individuals avoid testing and purchase full coverage, however this is inefficient, since high severity individuals underpay while low severity individuals overpay for insurance. With unobservable test results, pooled contracts are eliminated due to adverse selection, achieving efficiency. Our study suggests that sharing results help achieve efficiency for contracts where the indemnities can exceed actual losses, like critical illness insurance. For contracts which limit the indemnity to the actual loss, like health insurance, privacy protections are essential to prevent discrimination.}
+
+
+\textbf{Keywords:} insurance, severity, genetic testing
+
+\textbf{JEL Classification:} D80, D81
+% \textit{(JEL D41, D42, D43, D81, D82, D83, D84, D85, D86)}
+\end{abstract}
+
+\begin{document}
+
+
+
+
+\maketitle
+
+
+
+\newpage
+\section{Introduction}
+
+% \autocite{adams2009tc1, adams2014tc2, adams2017tc3, gb.pa2014} multiple 
+% \textcite[556]{stieg1981inh}. page number
+Genetic testing can be used to help individuals assess their risk and take actions in order to mitigate the fallout from the occurrence of a loss event. The dimension of risk often examined is frequency, i.e. the probability of loss occurrence. Being aware of frequency is essential for individuals when deciding whether or not to purchase health insurance or engage in risk-control. Another important dimension of risk is severity, i.e. the magnitude of the loss occurrence. 
+
+An example for the relevance of differentiating between loss severity and frequency is multiple sclerosis. Considering severity is particularly important for determining insurance coverage. Multiple sclerosis is an autoimmune disease affecting the central nervous system with varying degrees of severity, ranging from numbness and fatigue to major difficulties in walking, vision and cognitive functions (\citeauthor{ghasemi2017multiple}, \citeyear{ghasemi2017multiple}). The degree of severity can be attributed to a combination of genetic and environmental factors. The leukocyte antigen DRB1*1501 allele has been found to affect the severity of multiple sclerosis through encouraging the growth of the area of T2 hyperintensity which is attributed to increased neurological disorders, decreased brain volume and cognitive performance (\citeauthor{okuda2009genotype}, \citeyear{okuda2009genotype}). Certain genetic profiles also exclusively affect the severity without affecting the probability of developing multiple sclerosis, specifically when the interleukin-1 receptor antagonist and interleukin-1beta genes are both present (\citeauthor{schrijver1999association}, \citeyear{schrijver1999association}). There is no known cure for multiple sclerosis, and treatments which manage its effects include a combination of medication and physiotherapy (\citeauthor{ninds2015ms} (\citeyear{ninds2015ms}), \citeauthor*{cree2022new} (\citeyear{cree2022new})). Various insurance contracts pay for these treatments, such as critical illness insurance where a lump sum is paid  independent from the actual treatment costs (\citeauthor{abi2023criticalillness}, \citeyear{abi2023criticalillness}) and regular health insurance which mostly covers treatment costs (\citeauthor{boster2017comparative}, \citeyear{boster2017comparative}). These two broad types of contracts differ by the `principle of indemnity', which excludes claims payments exceeding the realized loss. It is the source of adverse selection when severity is considered. 
+
+The results from genetic testing can be used to increase efficiency by allowing insurance companies to price risks more accurately. However, this can result in unfair prohibitory pricing or market exclusion. Hence, the ability of insurance companies to exploit the results from genetic testing is governed by various information regimes which differ by country and the size of the financial loss (\citeauthor{belisle2019genetic}, \citeyear{belisle2019genetic}). We look at four information regimes\footnote{Insurance companies cannot force individuals to undergo a test under these information regimes.}: 1) a disclosure duty regime where test results must be revealed to the insurer, 2) a code of conduct, under which the existence but not the result of previous tests must be revealed, 3) a consent law, under which the insurer may use results if the customer agrees to provide the information and 4) an information ban which forbids the use of results for insurance contract offers. 
+
+We conduct a theoretical analysis of using severity information from genetic testing to guide insurance purchase in the four information regimes. In the absence of the principle of indemnity, individuals generally test for severity and self-select into type-appropriate contracts if a menu of contracts with coverages tailored to each type are offered. Regardless of the information regime, an efficient outcome arises. Under the consent law and information ban, however, insurers may only offer a pooled contract providing a coverage of the average loss since the insurer cannot differentiate between tested and untested individuals. An inefficient\footnote{The high severity type has insufficient coverage and the low severity type has too much coverage.} \citeauthor{rothschild1978equilibrium} (\citeyear{rothschild1978equilibrium}) pooling equilibrium would occur if insurers only offer a pooled contract, as individuals will not test. In the presence of the principle of indemnity, individuals forgo testing and purchase full coverage under the disclosure duty and code of conduct. This is inefficient since high severity types underpay, while low severity types overpay for insurance. Under the consent law and information ban, adverse selection can occur, leading insurance companies to limit the types of contracts offered. As a result, individuals self-select and test into type-appropriate full-coverage contracts. 
+
+In an extension, we consider testing for both severity and frequency. When individuals are informed, they tend to self-select into type-appropriate contracts if insurers are able to observe the testing status. However, individuals with a high loss probability have an incentive to pretend to be the type to have a low loss probability, hence insurance companies tend to only offer partial coverage to ensure that contracts are incentive compatible (\citeauthor{rothschild1978equilibrium}, \citeyear{rothschild1978equilibrium}). When the principle of indemnity is absent, low loss probability but high severity types are offered a lower partial coverage than when the principle of indemnity is present. Insurers are able to offer more partial coverage when it cannot differentiate between loss probabilities due to the indemnity being limited to the loss size. Uninformed individuals may find it optimal to forgo type-appropriate contracts under certain parameters, hence testing may not be globally optimal under the code of conduct and disclosure duty. Under the consent law and information ban, insurance companies offer a pooled contract when the principle of indemnity is absent and do not offer a pooled contract when it is present. Individuals, unlike the case with only severity, find it optimal to test regardless of the principle of indemnity because the premium rates of pooled contracts is relatively high due to asymmetric information. 
+
+The results from this paper suggest it is important to consider the contract type when determining regulations on the usage of genetic test results. In the absence of the principle of indemnity, adverse selection is not present. Hence, it is important to have regulations allowing contracts which encourage testing to be designed to ensure that individuals are covered regardless of type. In the presence of the principle of indemnity, regulations which encourage testing may lead to concerns of discrimination. Individuals may not want to test because once an insurer discovers the individual's type, the individual has to pay more for insurance. Furthermore, considering only frequency risk may lead to individuals being apprehensive towards testing, especially in information regimes which mandate the disclosure of test results to insurers, due to fears of discrimination, likely resulting in individuals being under-insured. Considering severity in addition to frequency can mitigate concerns of under-insurance, and it is also important to have information regimes which protect the privacy of individuals to lead to an efficient market outcome (\citeauthor{rothschild2011efficiency}, \citeyear{rothschild2011efficiency}).
+
+
+% Another example is about cancer: people with certain characteristics are more likely to get cancer (and recurrence) with different levels of severity \autocite{cooley2003symptom, lutz2001symptom, stenkvist1982predicting}. For a given recurrence probability, cancers can resurface in the same place or in a different part of the body depending on various health characteristics. Different treatments at different cost levels might therefore be needed \autocite{mahvi2018local}, which, in principle, implies the need for different health insurance coverage. 
+
+The paper is organized as follows: Section 2 provides a brief literature review. Section 3 sets up the model which considers testing severity. Section 4 extends the model by considering testing both frequency and severity. Section 5 provides a discussion, and Section 6 concludes.
+
+\section{Literature review}
+
+Our paper contributes to the literature on using genetic testing for risk classification to guide insurance purchasing decisions. Risk classification leads to greater efficiency for both the insurer and policyholder. Insurance pricing is more precise and individuals are able to select contracts which are more appropriate for their risk type \autocite{finkelstein2004adverse}. The increased efficiency, however, comes with a possibility of discrimination \autocite{crocker1986efficiency}, although the literature finds that the impact of testing is generally ambiguous. On the one hand, \citeauthor{doherty1996adverse} (\citeyear{doherty1996adverse}) find in a theoretical model that the private value of having genetic information is non-negative only if insurance companies are unable to observe the information of the individual who got tested. On the other hand, \textcite{hoel2006genetic} find that individuals are more likely to take a test if the results are verifiable, with low-risk individuals faring better and high-risk and untested individuals unaffected by the results being identifiable. The authors then conclude that a regulatory regime in which insurance companies are able to use genetic information is optimal. 
+
+The efficiency and discriminatory aspects of genetic testing are usually considered for frequency risk and depend on the equilibria which arise. When only frequency risk is considered in the absence of genetic testing, under the \citeauthor{rothschild1978equilibrium} (\citeyear{rothschild1978equilibrium}) equilibrium, high risk individuals receive full coverage and low risk individuals receive partial coverage at an actuarially fair price. With genetic testing, the equilibrium depends on the proportion of high risk to low risk individuals. \textcite{hoy2003impact} show in a theoretical model that if the proportion of individuals with a high probability (frequency) of suffering a disease is large, then separating contracts prevail. A pooling equilibrium results if the proportion of low risk individuals is large. \citeauthor{doherty1995severity} (\citeyear{doherty1995severity}) introduces severity in addition to frequency risk and finds that low risk types are able to receive higher coverage, while the coverage remains unchanged for high risk types. The low risk types, however, suffer from a higher premium due to the increased coverage. 
+
+The literature on the impact of genetic testing on insurance decisions involving frequency risks considers the welfare under four different information regimes: disclosure duty, code of conduct, consent law and information ban (\textcite{barigozzi2011genetic} and
+\citeauthor*{peter2017endogenous} (\citeyear{peter2017endogenous})). \textcite{barigozzi2011genetic} find that the value of information can either be positive or negative under the disclosure duty and code of conduct, with the value of information being at least as large in the disclosure duty as in the code of conduct. Under the consent law, the value of information is always positive and under the information ban, the value of information is non-negative. With only frequency risk considered, the consent law leads to the greatest gain in utility from testing. We find similar results when considering both frequency and severity together. 
+
+Other papers in the genetic testing literature examine whether testing is worthwhile depending on what individuals can do to reduce risk. \citeauthor{bardey2013genetic} (\citeyear{bardey2013genetic}) consider optional genetic testing for frequency risk under the disclosure duty and extends \citeauthor{barigozzi2011genetic} (\citeyear{barigozzi2011genetic}) by considering prevention in the context of moral hazard. If effort is observable, individuals only test for frequency if the prevention cost is ``\textit{neither too large nor too small}". If the prevention cost is too large, individuals will not exert effort even if aware of the test result. If the prevention cost is too small, individuals exert effort even if unaware of the test result. If effort is unobservable, genetic testing is useful to individuals if the effort cost is low. In other words, if effort is unobservable, individuals' prevention efforts do not translate into lower premiums, hence it does not make sense for individuals to exert effort unless it is not costly to decrease loss probability to a value close to zero. \textcite{crainich2017self} studies how genetic testing can help individuals adjust the amount of self-insurance. If genetic information is private, under a pooling equilibrium, high frequency risk individuals copy the amount of self-insurance a low frequency risk individual partakes in. In the \textcite{rothschild1978equilibrium, miyazaki1977rat, spence1978product} equilibria, high frequency risk individuals exert a different amount of effort on self-insurance than low risk individuals. If genetic information is public, high risk individuals increase the self-insurance effort while low risk individuals decrease it.
+
+\citeauthor*{peter2017endogenous} (\citeyear{peter2017endogenous}) also examine the different regulatory regimes for the use of genetic information in the health insurance market when prevention is endogenous. The disclosure duty information regime is weakly optimal. An information ban leaves individuals worse off since they are unable to choose appropriate secondary prevention measures. 
+
+The literature so far assumes that individuals always prefer insurance. \citeauthor{posey2021genetic} (\citeyear{posey2021genetic}) considers that individuals can find it optimal to forgo insurance, especially if the loss probability exceeds some threshold. When insurers can observe the testing results, low frequency risk individuals are fully covered while high frequency risk individuals drop out since high risks cannot buy insurance at actuarially fair prices in this model. When insurers are unable to observe the testing results unless the individual discloses it, a similar result is found, where high risk types are priced out of the market. In essence, \citeauthor{posey2021genetic} (\citeyear{posey2021genetic}) find that the disclosure duty and consent law yield similar outcomes. \citeauthor*{bardey2019trade} (\citeyear{bardey2019trade}) conduct an experiment to determine the welfare under the disclosure duty and consent law and find that the insurance take-up rate under the consent law is higher than under the disclosure duty.
+
+
+\section{Model: Testing for severity}
+This section introduces the model we use to examine whether individuals test for severity under different information regimes. Suppose there is an individual who can suffer a loss of $i$ where $i \in \{L,H\}$ and $L<H$, i.e. the individual who suffers a loss of $H$ is the high severity type and the individual who suffers a loss of $L$ is the low severity type. There is a unit mass of individuals where $\theta_H$ is the share of $H$-types and $\theta_L$ is the share of $L$ types and $\theta_H + \theta_L = 1$. The individual is unable to manipulate her risk type\footnote{\citeauthor{tan2025testing} (\citeyear{tan2025testing}) considers loss reduction with severity information.}. The probability of suffering this loss is $\mu$. The individual is initially unaware of her risk type and must decide whether to inform herself through testing\footnote{In \citeauthor{dionne2014economic} (\citeyear{dionne2014economic}), the effects of a ban on risk classification, i.e. the ability of insurance companies to use type information to price insurance contracts, depends on \textit{when} individuals purchase insurance. There are two `time' perspectives, i.e. the `interim' perspective in which individuals have tested and are aware of type information but have not purchased insurance yet, and the `ex-ante' perspective in which individuals have neither tested nor purchased insurance yet. In our paper, we consider the `ex-ante' perspective, in which before deciding whether to test, individuals need to determine optimal insurance for both risk types as well as optimal insurance when remaining uninformed. Depending on the information regime, an `interim' perspective is possible, i.e. the individual only decides what coverage to purchase after being tested. However, we assume that the individual considers all possibilities in terms of the expected utility from being a particular type before testing as we want to examine whether testing per se is worthwhile.}, where the test is costless, and also whether to purchase an insurance contract, $\{q,d\}$ where $q$ is the premium rate and $d$ is the insurance proceeds paid out in the event of a loss (let the premium be $\pi = qd$). We also assume that the individual initially has no information about severity and that a loss can only occur after the insurance decision has been made. The formal assumptions are below:
+
+\begin{assumption}[Preferences]\label{ass:preferences}
+The individual's von Neumann-Morgenstern utility function $u : \mathbb{R} \to \mathbb{R}$ is $C^3$, with $u'(\cdot) > 0$, $u''(\cdot) < 0$, and $u'''(\cdot) > 0$ (prudence in the sense of \citeauthor{kimball1990precautionary} (\citeyear{kimball1990precautionary}). The domain of $u$ is wide enough that all wealth realizations encountered below lie in its interior.
+\end{assumption}
+
+\begin{assumption}[Parameters]\label{ass:parameters}
+$0 < L < H < w$; $\mu \in (0,1)$; $\theta_H, \theta_L \in (0,1)$ with $\theta_H + \theta_L = 1$. Define $A := \theta_H H + \theta_L L \in (L,H)$ as the population mean loss size.
+\end{assumption}
+
+\begin{assumption}[Insurance market]\label{ass:market}
+Insurers are risk-neutral, competitive, and earn zero expected profit on each contract sold. With the principle of indemnity, the insurer's payout in state $i$ is $\min\{i, d\}$; without it, the payout is $d$ regardless of the realized loss.
+\end{assumption}
+
+For compactness, define state-contingent wealth under a contract $(q,d)$ as:
+\begin{align*}
+W_0(q,d) &:= w - qd && \text{(no loss),} \\
+W_1^{np}(q,d,i) &:= w - qd - i + d && \text{(loss, no principle of indemnity),} \\
+W_1^{p}(q,d,i) &:= w - qd - i + \min\{i,d\} && \text{(loss, principle of indemnity).}
+\end{align*}
+
+A note on which assumption does which work in what follows. Assumption \ref{ass:preferences}'s first two properties ($u' > 0$, $u'' < 0$) capture standard risk aversion. The third property ($u''' > 0$, equivalently $u'$ convex) is required only for the over-insurance result in Proposition~\ref{prop:duninfnp} below; risk aversion alone is insufficient there. Conversely, the no-testing result under the principle of indemnity (Proposition~\ref{prop:noindemnitytestnoselect}) follows from risk aversion alone and does not require prudence --- a distinction we return to.
+% The individual is endowed with a wealth of $w$ where $i < w$. The individual's von Neumann-Morgenstern utility function, $u()$, has the following properties: $u'() > 0$ and $u''()<0$. We also assume that the individual initially has no information about severity and that a loss can only occur after the insurance decision has been made. 
+
+\subsection{Contracts in the absence of the principle of indemnity} \label{sev_absence}
+
+In the absence of the principle of indemnity, an individual's insurance proceeds in the event of a loss are not limited to the loss size. In the health context, critical illness insurance or dread disease insurance provides a lump-sum coverage upon diagnosis of critical illnesses such as cancer, heart disease, organ transplantation or kidney failures (\citeauthor{clhia2024flip}, \citeyear{clhia2024flip}). For critical illness insurance, individuals need to make a choice about the amount of coverage to purchase (\citeauthor{bsd2022critical}, \citeyear{bsd2022critical}), hence motivating the decision to test for the potential degree of severity\footnote{There are other common contracts where the principle of indemnity does not apply although the severity cannot be tested, for example life insurance \autocite{swan1981subrogation} or certain types of accident insurance where the indemnity payment is predetermined depending on the degree of disability (\citeauthor{hansemerkur2024gliedertaxe}, \citeyear{hansemerkur2024gliedertaxe}).}. Critical illness insurance does not compensate specific expenses but exists more to support the policyholder in times of distress and can be used in a flexible manner, including supplementing income loss during the period of hospitalization (\citeauthor{li2019effect} (\citeyear{li2019effect}), \citeauthor{zhang2019critical} (\citeyear{zhang2019critical})).  
+
+% Additionally, property insurance\footnote{It is sometimes possible that replacement cost coverage leads to an increase in the value of an asset, for example, by increasing the \textit{``useful life of the asset"} \autocite{williams1960principle, lindblad1976relevant}.}
+If an individual is informed and suffers a loss of severity $i$, she has to find the amount of coverage, $d_{I,np}$\footnote{$I$ stands for informed, while $np$ stands for no principle of indemnity.}, which maximizes the expected utility, $V_{I,np}$:
+
+\begin{align}
+    V_{I,np} = \underset{\rm d_{I,np}}{\rm max} \left\{\mu u(w-\pi_{I,np}-i+d_{I,np} )+(1-\mu)u(w-\pi_{I,np} )\right\}
+\label{informed_np_maxproblem}
+\end{align}
+
+Since we assume that insurance is actuarially fair (i.e. $q=\mu$), the optimal coverage is $d_{I,np}^* = i$, i.e. full coverage \autocite{mossin1968aspects}. Without adverse selection, an informed individual has no incentive to deviate from the contract meant for her respective loss severity. 
+
+An uninformed individual needs to find the indemnity, $d_{U,np}^*$\footnote{$U$ stands for uninformed.}, which maximizes expected utility $V_U$:
+
+\begin{align}
+    V_{U,np} & = \underset{\rm d_{U,np}}{\rm max } \left\{\sum_{i \in \{H,L\}} \theta_i[\mu u(w-\pi_{U,np}-i+d_{U,np})] +(1-\mu)u(w-\pi_{U,np}) \right\}
+\label{uninformed_np_maxproblem}
+\end{align}
+
+Let $A=\theta_H H + \theta_L L$ be the mean loss size in the population. 
+
+
+\setcounter{theorem}{0}
+\renewcommand{\thetheorem}{\arabic{theorem}}
+
+\begin{prop}\label{prop:duninfnp}
+    Suppose insurance is actuarially fair, $q=\mu$, and the principle of indemnity is absent. The uninformed individual's problem
+    \begin{align}
+        V_{U,np} = \underset{\rm d\geq0}{\rm max} \left\{\sum_{i\in\{H,L\}} \theta_i\mu u(w-\mu d - i + d)+(1-\mu)u(w-\mu d)\right\}
+    \end{align}
+    admits a unique optimum, $d_{U,np}^*$, characterized by the FOC
+    \begin{align}\label{prop:prop1foc}
+        \left[\sum_{i\in\{H,L\}} \theta_i u'(W_1^{np}(\mu,d,i))\right] = u'(W_0(\mu,d)).
+    \end{align}
+    Equivalently, dividing by $(1-\mu)$:
+    \begin{align}
+        \sum_{i\in\{H,L\}} \theta_i u'(w-\mu d-i+d) = u'(w-\mu d)
+    \end{align}
+    Under Assumption 1, $d_{U,np}^*>A$.
+\end{prop}
+
+\begin{proof}
+    In the first step, we show that the objective function is strictly concave. Given that $q=\mu$, let
+    \begin{align*}
+        \Phi(d):= \mu \sum_{i \in \{H,L\}} \theta_i u(w-\mu d -i + d) + (1-\mu) u (w-\mu d)
+    \end{align*}
+    Taking the FOC,
+    \begin{align*}
+        \Phi'(d) = \mu (1-\mu) \sum_i \theta_i u'(w-\mu d - i + d) - \mu (1-\mu)u'(w-\mu d)
+    \end{align*}
+    since $\partial W_1^{np}/\partial d = 1-\mu$ and $\partial W_0/\partial d = -\mu$. Taking the second order condition,
+    \begin{align*}
+        \Phi''(d)=\mu(1-\mu)^2 \sum_i \theta_i u''(w-\mu d -i + d) + \mu^2(1-\mu)u''(w-\mu d)<0
+    \end{align*}
+    since $u''<0$ everywhere. Hence, $\Phi$ is strictly concave on $\mathbb{R}_+$.
+    In the second step, we show that an interior optimum exists. Note
+    \begin{align*}
+        \Phi'(0)= \mu(1-\mu)\left[\sum_i \theta_i u'(w-i)-u'(w)\right]>0
+    \end{align*}
+    because $u'(w-i)>u'(w)$ for each $i>0$ (by $u''<0$) as $d \rightarrow \infty$, $W_0 \rightarrow -\infty$ and $u'(W_0)\rightarrow +\infty$. Since the no loss term $u'(w-\mu d)$ grows unboundedly while the loss state terms grow at the slower rate $(1-\mu)$, eventually $\Phi'(d)<0$ for $d$ sufficiently large. Hence, $\Phi'$ changes sign and by strict concavity has a unique zero, which is $d_{U,np}^*$.
+    In the third step, setting $\Phi'(d)=0$ and dividing by $\mu (1-\mu)$ yields equation \ref{prop:prop1foc}.
+    In the final step, since $d_{U,np}^*>A$, we evaluate the FOC at $d=A$. The loss state wealths are 
+    \begin{align*}
+        W_{1}^{np}(\mu,A,H) = w-\mu A - H+A=w-\mu A -\theta_L (H-L) \\
+        W_1^{np}{\mu,A,L} = w- \mu A - L + A = w -\mu A + \theta_H(H-L)
+    \end{align*}
+    The $\theta_i$-weighted average is exactly $w-\mu A$, which equals $W_0 (\mu,A)$.
+    So we must determine whether
+    \begin{align*}
+        \theta_H u'(W_0 - \theta_L(H-L))+\theta_L u'(W_0 + \theta_H(H-L)) \gtreqless u'(W_0)
+    \end{align*}
+    The two arguments on the left have $\theta_i$-weighted mean equal to $W_0$. By Assumption \ref{ass:preferences}, $u'$ is strictly convex (since $u'''>0$). Jensen's inequality gives
+    \begin{align*}
+        \theta_H u'(W_0 - \theta_L (H-L)) + \theta_L u'(W_0 + \theta_H(H-L)) > u'(W_0)
+    \end{align*}
+    Hence $\Phi'(A)>0$, and by strict concavity, the optimum $d_{U,np}^*$ lies strictly to the right of A.
+\end{proof}
+
+% \begin{prop}
+%     Given that $q=\mu$, the necessary condition for an optimal d is:
+% \begin{align}
+%     \theta_H u'(w-qd_{U,np}^*-H+d_{U,np^*}) + \theta_L u'(w-qd_{U,np}^*-L+d_{U,np}^*) = u'(w-qd_{U,np}^*)
+% \end{align}
+% The optimal coverage which satisfies the above condition for the uninformed individual is $d_{U,np}^* > A$ in the absence of the principle of indemnity\footnote{severity can be considered a type of background risk because individuals are unable to reduce the risk despite being informed about it. In \citeauthor{gollier1996risk} (\citeyear{gollier1996risk}), a utility function is considered `risk vulnerable' if individuals become more risk-averse with the introduction of an unfair background risk, i.e. a risk that leads to a decrease in wealth but is not in the control of the individual. With severity and due to the concavity of $u'()$, the absolute risk aversion of $V_{U,np}$ is greater than the absolute risk aversion of the ordinary utility function. This results in individuals purchasing an insurance coverage which exceeds the expected loss across types.}. Note that $u'()$ is assumed to be convex, which implies prudence, i.e. $u'''()>0$.
+% \end{prop}
+
+% \begin{proof}
+% Suppose $d_{U,np}^* = A$, due to the convexity of $u'()$, the linear combination, $\theta_H u'(w-\pi_{U,np}^*-H+d_{U,np^*}) + \theta_L u'(w-\pi_{U,np}^*-L+d_{U,np}^*)$, exceeds $u'(w-\pi_{U,np}^*)$. Now, suppose $d_{U,np}^* < A$. Think of this graphically, where wealth is on the $x$-axis and utility is on the $y$-axis. This means that the $x$-value of the linear combination, $w-\pi_{U,np}^*+d_{U,np}^*-A$, lies to the left of, $w-\pi_{U,np}^*$. As a result, the linear combination of $\theta_H u'(w-\pi_{U,np}^*-H+d_{U,np^*}) + \theta_L u'(w-\pi_{U,np}^*-L+d_{U,np}^*)$ again exceeds $u'(w-\pi_{U,np}^*)$. Hence, it is necessary for the $x$-value of the linear combination, $w-\pi_{U,np}^*+d_{U,np}^*-A$, to exceed of $w-\pi_{U,np}^*$; this implies $d_{U,np}^* > A$.
+% \end{proof}
+
+To determine whether it is worthwhile to test for severity, the individual needs to compare the expected utility from testing and forgoing information. Suppose there are three contracts available: $C_H = \{q, H\}$, $C_L = \{q, L\}$, $C_U = \{q, d_{U,np}^*\}$ and these contracts are actuarially fair, $q=\mu$, hence,  $C_H = \{\mu, H\}$, $C_L = \{\mu, L\}$, $C_U = \{\mu, d_{U,np}^*\}$. We will determine the equilibrium regime by regime.
+
+\setcounter{theorem}{0}
+\renewcommand{\thetheorem}{\arabic{theorem}}
+\begin{lemma}\label{lemma:alwaysbuy}
+    For any uninformed contract $C_U = \{\mu,d\}$ where $d>0$:
+    \begin{align*}
+        \theta_H u (w-\muH)+\theta_L u(w-\mu L)>\theta_H E_\mu \left[u(W_{1}^{np}(\mu,d,H)),u(W_0(\mu,d))\right]+\theta_L E_\mu\left[u(W_1^{np}(\mu,d,L)),u(W_0(\mu,d))\right]
+    \end{align*}
+    where $E_\mu[a,b]:= \mu a + (1-\mu)b$. That is, the expected utility from testing and buying full coverage which is type specific strictly exceeds the expected utility from any pooled contract.
+\end{lemma}
+
+\begin{proof}
+    Conditional on being type $i$, full coverage $C_i = \{\mu,i\}$ delivers certain wealth $w-\mu i$, hence utility $u(w-\mu i)$. Any other contract $\{\mu,d\}$ with $d \neq i$ delivers a non-degenerate lottery with the same mean $w-\mu i$ (since the contract is actuarially fair: $E[\text{wealth}]=w-\mu d +\mu d -\mu i = w -\mu i$). By strict concavity of $u$, the certain payoff strictly dominates. Taking expectations over types preserves the strict inequality.
+\end{proof}
+
+In the disclosure duty, nature first draws on each individual's type and the type is unobserved. Individuals then choose whether to test. The test results must be disclosed to insurers. Insurers present a menu of contracts, and are able to condition the contracts on test results. Individuals decide how much coverage to purchase and then losses are realized.
+
+\setcounter{theorem}{1}
+\renewcommand{\thetheorem}{\arabic{theorem}}
+\begin{prop}\label{prop:ddeqnoprinciple}
+    \text{(Disclosure duty equilibrium).} There exists a subgame perfect pure strategy equilibrium in which insurers offer the menu $\{C_H, C_L, C_U\}$, restricting $C_i$ to individuals who have tested and disclosed type $i$ and $C_U$ to untested individuals, every individual tests and individuals of type $i$ purchase $C_i$.
+\end{prop}
+
+\begin{proof}
+    We solve this game by backward induction. A tested individual of type $i$ purchases $C_i$, since $C_j$ where $j \neq i$ is unavailable to her under disclosure duty. An untested individual purchases $C_U$, since the alternative would be to go without insurance which yields strictly less according to \textbf{Proposition \ref{prop:duninfnp}}. By \textbf{Lemma \ref{lemma:alwaysbuy}}, testing strictly dominates not testing for the individual. Hence, every individual tests. Since every individual tests, the insurers' posted menu is the best response. Every contract is actuarially fair so expected profit is zero. There exists no deviation which strictly increases profits while still attracting customers\footnote{The contracts are at the customers' bliss points within the actuarial fairness constraint}. If an individual acts off-path and deviates by not testing, the insurer offers $C_U$, which is sequentially rational since beliefs over untested individuals are siimply the prior $(\theta_H, \theta_L)$.
+\end{proof}
+
+In the code of conduct, recall that insurers are able to observe whether individuals have tested by not the result.
+
+\begin{prop}\label{prop:cceqnoprinciple}
+    \text{(Code of conduct equilibrium).} There is a weak perfect Bayesian equilibrium in which the menu offered to tested individuals is $\{C_H, C_L\}$ and to untested individuals is $\{C_U\}$, every individual tests and tested individuals truthfully self-select into $C_i$.
+\end{prop}
+
+\begin{proof}
+    The only subtlely relative to disclosure duty is that after testing, the insurer cannot directly observe types, so the menu $\{C_H, C_L\}$ needs to be incentive compatible. A tested individual of type $H$ has a payoff of $u(w-\mu H)$ from purchasing $C_H$. If the type $H$ individual purchases $C_L$, the payoff would be 
+    \begin{align*}
+        E_\mu \left[u(w-\mu L -H+L), u(w-\mu L)\right] = \mu u(w-\mu L - (H-L)) + (1-\mu)u(w-\mu L)
+    \end{align*}
+    The mean wealth under $C_L$ for type $H$ is $w-\mu L - \mu(H-L)=w-\mu H$, the same as $C_H$. Since $C_H$ delivers the same wealth with certainty and $C_L$ delivers a mean-preserving spread, by strict concavity $u(w-\mu H)> E(u(C_L|H))$. We can use a symmetric argument for type $L$. Hence, both incentive compatibility constraints are slack. On the equilibrium path, when an individual who is tested chooses $C_i$, the insurer believes that this individual is type $i$ with a probability of 1. For untested individuals, the insurers beliefs of type are simply the prior. Off-path beliefs (such as a tested individual choosing a contract beyond the menu) can be set to assign probability 1 to type $H$, which deters deviations. As a result, the testing decisions and menu offers follow the disclosure duty case.
+\end{proof}
+
+In the consent law, insurers cannot observe test status but individuals may voluntarily reveal a test result.
+
+\begin{prop}\label{prop:cleqnoprinciple}
+    \text{(Consent law equilibrium).} A Bayesian Nash equilibrium exists in which insurers offer $\{C_H, C_L\}$ with $C_L$ conditional on the individual presenting a verified test result which shows they are type $L$, everyone tests and each type purchases the appropriate contract.
+\end{prop}
+
+\begin{proof}
+    We prove this by contradiction. Suppose the insurer also offered $C_U = \{\mu, d_{U,np}^*\}$. A tested type $L$ individual prefers $C_L$ to $C_U$ (by \textbf{Lemma \ref{lemma:alwaysbuy}}) and would reveal her test result. A tested type $H$ individual also prefers $C_H$ over $C_U$ (and also $C_L$ if it were available; $C_L$ is cheaper than $C_H$ but it delivers the same mean wealth as $C_H$ but with residual loss state risk) by \textbf{Lemma \ref{lemma:alwaysbuy}}. Hence, $C_U$ does not attract anyone and the equilibrium is unchanged regardless of whether it is offered. Furthermore, any deviation contract needs to satisfy actuarial fairness in expectation given the buyers it attracts. The equilibrium contracts $C_H$ and $C_L$ each give the respective type her bliss point at zero insurer profit. No alternative contract can give a type strictly higher utility while remaining actuarially fair, by the standard \citeauthor{mossin1968aspects} (\citeyear{mossin1968aspects}) result. As a result, by \textbf{Lemma \ref{lemma:alwaysbuy}} and the conditioning of $C_L$ on verified test results showing the $L$ type, every individual strictly prefers to test.
+\end{proof}
+
+\begin{prop}\label{prop:ibeqnoprinciple}
+    \text{(Information ban equilibriua).} Under the information ban, there exist two perfect Bayesian equilibria:
+    \begin{enumerate}
+        \item \textbf{Separating equilibrium.} Insurers offer $\{C_H, C_L\}$ without conditioning, everyone tests and each type self-selets into the appropriate contract.
+        \item \textbf{Pooling equilibrium.} Insurers offer only $C_U = \{\mu, d_{U,np}^*\}$, no one tests and everyone purchases $C_U$.
+    \end{enumerate}
+\end{prop}
+
+\begin{proof}
+    \textbf{Separating equilibrium.} The incentive compatibility check is identical to that of the code of conduct case. The insurer cannot exclude any individual from any contract. By \textbf{Lemma \ref{lemma:alwaysbuy}}, individuals test. \\
+    \textbf{Pooling equilibrium.} If only $C_U$ is offered, no one tests as the only alternative is to not purchase insurance. The insurer's prior remains at $(\theta_H,\theta_L)$ and off-path beliefs after any deviation contract can be set to make deviations unprofitable.
+\end{proof}
+
+% \begin{prop}
+% \textcolor{red}{Suppose there are three contracts available: $C_H = \{q, H\}$, $C_L = \{q, L\}$, $C_U = \{q, d_{U,np}^*\}$ and these contracts are actuarially fair, $q=\mu$. In the absence of the principle of indemnity, an individual finds it optimal to test for severity as long as $C_H$ and $C_L$ are offered. Purchasing $C_H$ if one is the $H$-type and purchasing $C_L$ if one is the $L$-type and testing is the pure strategy Nash equilibrium under the disclosure duty, a weak perfect Bayesian equilibrium under the code of conduct, and a Bayesian Nash equilibrium under the consent law and a perfect Bayesian equilibrium under the information ban.}
+% \end{prop}
+
+% \begin{proof}
+% Under the disclosure duty and code of conduct, the insurance company can condition on testing status, hence would offer $C_H$ and $C_L$ to tested individuals and $C_U$ to untested individuals. Since individuals self-select into type appropriate contracts when informed, $C_H$ and $C_L$ are optimal for $H$- and $L$- types respectively. When uninformed, $C_U$ is optimal. For testing to be preferred, then it is necessary that $\theta_H V_{I,np}^H(C_H)+\theta_L V_{I,np}^L(C_L) > V_{U,np} (C_U)$, where $V_{I,np}^H(C_H) = u(w-qH)$, $V_{I,np}^L(C_L) = u(w-qL)$ and $V_{U,np} (C_U) = [\sum_{i \in \{H,L\}} \theta_i \mu u(w-qd_{U,np}^* $ $-i+d_{U,np}^*)]+ (1-\mu)u(w-qd_{U,np}^*)$. Due to the concavity of the utility function, the utility resulting from purchasing full coverage always exceeds the utility of purchasing any other level of coverage. As a result, there is always a positive value from testing. Under the disclosure duty, there is complete information hence a Nash equilibrium arises where untested individuals purchase the pooled contract, informed individuals purchase the tailored contracts, and individuals test. Under the code of conduct, the insurance company has incomplete information regarding the individual's severity. However, the insurance company can again simply offer the menu of contracts based on testing status. In the weak (separating) Perfect Bayesian equilibrium, individuals optimally test and then truthfully disclose type information. Given sequential rationality, individuals then purchase appropriately tailored contracts.  
+
+% Under the consent law and information ban, the insurer would need to anticipate whether individuals test or not due to incomplete information. Since the insurer will make zero expected profit in the absence of the principle of indemnity, the requirement to anticipate whether individuals test or not will not lead to an expected loss regardless of the contracts offered. An insurer can offer 1) $C_H$, $C_L$ and $C_U$, 2) only $C_U$ or 3) $C_H$ and $C_L$. In 1) and 3), individuals test and in 2) individuals do not test. Under the consent law, 3) can be classified as a Bayesian Nash equilibrium if the insurer conditions $C_L$ on the presentation of test results. Untested individuals and individuals who do not reveal test results can only purchase $C_H$. Optimally, individuals would then test and purchase tailored contracts. 1) is identical to 3), except individuals also have access to the $C_U$ contract. However, individuals do not pick $C_U$ in equilibrium. Under the information ban, 1) and 3) are perfect Bayesian equilibria since insurers cannot condition contracts on test results. The insurer will not be able to update their beliefs on individual types until the purchase of insurance. 
+
+% Offering only $C_U$ leads to a pooling perfect Bayesian equilibrium since there is no benefit to testing due to the availability of only one contract. Insurers also cannot update beliefs from the prior. However, 2) would no longer be an equilibrium if the insurance market is monopolistic\footnote{Furthermore, 2) is inefficient ex-post because if some individuals experience a loss event and discover they are the $L$-type, they will exit the insurance market, leaving only $H$-types and increasing the premium - a classic `lemons' problem and a \citeauthor{rothschild1978equilibrium} (\citeyear{rothschild1978equilibrium}) pooling equilibrium.}. Suppose $C_U$ is offered by every insurer. An insurer who deviates by offering $C_H$ and $C_L$ will earn monopoly profits since individuals will be nudged to test and purchase the appropriate coverage. If there are administrative costs to setting up insurance contracts, the non-deviating insurers will experience a loss. Hence, the non-deviating insurers will subsequently offer $C_H$ and $C_L$ to avoid a loss. This is the so-called Miyazaki-Spence (subgame perfect) equilibrium.
+
+
+% \end{proof}
+\setcounter{theorem}{0}
+\renewcommand{\thetheorem}{\arabic{theorem}}
+\begin{corollary}\label{corollary:nonnegnp}
+In the absence of the principle of indemnity, the value of information is non-negative in all four information regimes.
+\end{corollary}
+
+We can use the multiple sclerosis example to understand the intuition behind this result. If individuals test and find out that they have the severe form of a disease, they will want sufficient coverage to be able to cover not only treatment costs but the indirect costs which arise from not being able to work for extended periods of time due to lengthy treatment. If individuals test and find out they have the minor form of multiple sclerosis, they would want to pay less in premiums as they do not require a large lump sum.
+
+
+\subsection{Contracts in the presence of the principle of indemnity}
+
+Given the principle of indemnity, an individual's payout in the event of loss is limited to the loss size even if the coverage purchased exceeds the loss size. Most insurance contracts operate with the principle of indemnity \autocite{rejda2005risk}.
+
+An informed individual solves the same problem as the individual in the case without the principle of indemnity. As a result, an informed individual purchases full coverage appropriate for her risk level. An uninformed individual who suffers a loss of size $i$, needs to find the indemnity, $d_{U,p}^*$\footnote{$p$ stands for principle of indemnity. In the presence of the principle of indemnity, the indemnity paid out now depends on the loss severity ex-post.}, which solves the following maximization problem:
+
+\begin{align}
+V_{U,p} = \underset{\rm d_{U,p}}{\rm max } & \left\{\left[\sum_{i \in {L,H}} \theta_i \mu u(w-\pi_{U,p}-i+\text{min}\{i,d_{U,p}\})\right] + (1-\mu)u(w-\pi_{U,p})\right\}
+\label{uninformed_p_maxproblem}
+\end{align}
+
+where $\pi_{U,p} = q(d_{U,p})d_{U,p}$ and  $q(d_{U,p})$ is not equal to $\mu$ since the insurance contract for the uninformed individual needs to be actuarially fair. As the insurance company makes zero expected profit, $q(d_{U,p}) = \mu (\theta_H + \theta_L \frac{L}{d_{U,p}^*})$. Under the principle of indemnity, the value of $d_{U,p}^*$ which maximizes the individual's expected utility\footnote{$d_{U,p}^*$ is at least $L$. If $d_{U,p}^*<L$, the expected utility increases when coverage increases marginally for both types. Since $d_{U,p}^*$ is at least $L$, for the uninformed individual, there is no longer uncertainty associated with being the $L$-type. Hence, the uninformed individual can `behave' as if she is the $H$-type. Using a similar line of reasoning, $d_{U,p}^* = H$. If $d_{U,p}^*<H$, expected utility can always be increased by marginally increasing coverage.} is $d_{U,p}^*=H$ and the premium rate is $q(H) = \mu (\theta_H + \theta_L \frac{L}{H})$. 
+
+The premium paid in the presence of the principle of indemnity ($q(H) H$) is less than the premium paid in the absence of the principle of indemnity ($q d_{U,np}^*$)\footnote{$q(H) H = q A < q d_{U,np}^*$ since $d_{U,np}^* > A$}. Furthermore, the coverage provided is $H$ (although the $L$-type individual would only receive $L$ if a loss occurs) with a premium rate of $q(H) < q = \mu$\footnote{$q(H) = \mu (\theta_H + \theta_L \frac{L}{H}) < q = \mu (\theta_H + \theta_L \frac{H}{H}) = \mu (\theta_H + \theta_L) = \mu$} in the presence of the principle of indemnity, whilst in the absence of the principle of indemnity the coverage provided was $d_{U,np}^* > A$ with a premium rate of $q=\mu$. 
+
+\setcounter{theorem}{5}
+\renewcommand{\thetheorem}{\arabic{theorem}}
+\begin{prop}\label{prop:noindemnitytestnoselect}
+In the presence of the principle of indemnity under the disclosure duty and code of conduct information regimes, the insurer offers $C_H$, $C_L$, $C_U'$ and an individual will not test her severity and purchases the pooled contract, $C_U'=\{q(H),H\}$. This is a Nash equilibrium under the disclosure duty and a weak perfect Bayesian equilibrium under the code of conduct.
+\end{prop}
+
+\begin{proof}
+For testing to be optimal, it is required that $\theta_H V_{I,p}^H (C_H) + \theta_L V_{I,p}^L (C_L) > V_{U,p}(C_U')$ where $V_{I,p}^H (C_H) = u(w-qH)$, $q=\mu$, $V_{I,p}^L (C_L) = u(w-qL)$, $ V_{U,p}(C_U') = u(w-q(H)H)$ and $q(H)= \mu(\theta_H + \theta_L \frac{L}{H})$. Since the individual's test status can be observed, the insurance company can restrict $C_U'$ to those who did not get tested. Under the disclosure duty, the insurance company has complete information as it can observe the individual's type information. This leads to a Nash equilibrium as the individual does not find it beneficial to test for severity due to the concavity of the utility function. This means that individuals who are prudent will prefer certainty over uncertainty, since the expected utility when tested equals the certain utility when untested. A similar argument can be made for the code of conduct, although the insurance company has incomplete information as the type information cannot be observed hence this is a weak perfect Bayesian equilibrium.
+\end{proof}
+
+\begin{prop}
+In the presence of the principle of indemnity under the consent law and information ban regimes, the insurance company does not offer the pooled contract, $C_U'$. Testing and subsequently purchasing the contracts with the appropriate coverage is a Bayesian Nash equilibrium under the consent law and perfect Bayesian equilibrium under the information ban.
+\end{prop}
+
+\begin{proof}
+Since the individual's test status cannot be observed, adverse selection is now present. If the pooled contract, $C_U'$, was offered, a tested individual who suffers a loss of $H$ can pretend to be untested. Under the consent law, this is not a problem, as a tested individual who suffers a loss of $L$ is able to reveal type information to the insurer. This means that even if the tested individual who suffers a loss of $H$ would like to hide information, it is not possible, since the insurance company knows that everyone is tested. Someone who hides information can be identified as the type which suffers a loss of $H$. As a result, the insurer would not offer $C_U'$. Furthermore, the insurer can condition the $C_L$ contract on the presentation of a test result which shows that the individual is the $L$-type, again leading to a Bayesian Nash equilibrium. Meanwhile, under an information ban, neither type is allowed to reveal information. To rectify the adverse selection and incomplete information, the insurer offers only $C_H$ and $C_L$. Either contract can be optimal given different parameters, however, the value of testing is positive. Suppose an uninformed individual is truly the $H$-type and the optimal contract is $C_L$. Testing would ensure the individual purchases the $C_H$ which yields higher utility. The converse is true for the uninformed individual who is truly the $L$-type. 
+\end{proof}
+
+
+\subsection{Combination of contracts}
+
+To make the model more realistic, we model severity as the duration of illness. The model setup is identical to the model in Section \ref{sev_absence} except how severity is defined. There are two types, $i$, of individuals: type L that experiences the disease for $L$ days and type H experiences the disease for $H$ days where $L<H$. The respective probabilities of being each type are $\theta_L$ and $\theta_H$. The longer the duration of the illness, the higher the medical cost. We denote medical costs for the H-type as $c_H$ and the L-type as $c_L$, and the average medical costs as $B = \theta_H c_H + \theta_L c_L$. We allow the principle of indemnity in this setup to limit payouts ex-post to add to the realism of the model. The individuals can purchase insurance for the treatment costs. The insurance contract works with the principle of indemnity and the individual has to choose the optimal coinsurance rate, $\alpha \in [0,1]$. While the individuals are undergoing treatment for the disease, they also experience lost income which we denote by $ri$ where $r$ is the daily wage rate and $i$ is the duration in days. To make up for lost income, individuals can purchase critical illness insurance which pays the lump sum of $\delta \geq 0$. The critical illness insurance operates in the absence of the principle of indemnity. The actuarially fair premium is given by $\pi(\delta,\alpha) = \mu(\delta + \alpha B)$. Individuals can test to find out the duration of their disease, and we assume that one test can reveal the individual's medical costs and lost income.  
+
+An informed individual of type $i$ has to find the coinsurance rate, $\alpha \in [0,1]$ and lump sum $\delta$, which maximizes the expected utility, $V_{I,np}$:
+
+\begin{align}
+    V_{I} = \underset{\rm \delta, \alpha}{\rm max} \left\{\mu u(w-\pi(\delta, \alpha)-c_i-ri+\delta + \alpha c_i )+(1-\mu)u(w-\pi(\delta,\alpha))\right\}
+\label{informed_combined_maxproblem}
+\end{align}
+
+The optimal coverage for critical illness insurance is given by $\delta = ri + (1-\alpha)c_i$ and the optimal coinsurance rate $\alpha =1$, i.e. full coverage for medical costs. This implies that critical illness insurance exactly covers the lost income, $\delta = ri$. 
+
+The uninformed individual solves the following optimization problem:
+
+\begin{align}
+V_{U} = \underset{\rm \delta_U, \alpha_U}{\rm max } & \left\{\left[\sum_{i \in {L,H}} \theta_i \mu u(w-\pi(\delta_U,\alpha_U)-c_i- ri+\delta_U + \alpha_U c_i\})\right] + (1-\mu)u(w-\pi(\delta_U,\alpha_U))\right\}
+\label{uninformed_combined_maxproblem}
+\end{align}
+
+The first order condition with respect to $\delta_U$ is $\sum_{i \in {L,H}} \theta_i u'(w-\pi(\delta_U,\alpha_U)-c_i- ri+\delta_U + \alpha_U c_i\})$ $ = u'(w-\pi(\delta_U,\alpha_U))$ and with respect to $\alpha_U$ is $\sum_{i \in {L,H}} \theta_i \mu (c_i - B) u'(w-\pi(\delta_U,\alpha_U)-c_i- ri+\delta_U + \alpha_U c_i\}) = \mu B (1-\mu)u'(w-\pi(\delta_U,\alpha_U))$. Combining the first order conditions and following the logic in Section \ref{sev_absence}, the optimal $\delta_U^* > rA$ and the optimal $0 < \alpha_U^* < 1$. In this setup, \textbf{Proposition 1}, \textbf{Proposition 2} and \textbf{Corollary \ref{corollary:nonnegnp}} hold, hence there is a non-negative value of testing. Note that endogenizing $B$ such that the pooling premium depends on the proportion of individuals who test, i.e. $B_U = \frac{\theta_L (1-\tau_L)c_L + \theta_H(1-\tau_H)c_H}{\theta_L(1-\tau_L) + \theta_H(1-\tau_H)}$, leads to the same coinsurance, indemnity and testing decisions.
+
+\section{Extension: Testing for frequency and severity}
+
+In this section, we introduce frequency risk in addition to severity risk and consider an individual who uses genetic tests to identify both frequency and severity. 
+
+Individuals can either suffer a loss with either a probability of $\mu_H$ or $\mu_L$ where $\mu_H > \mu_L$. The share of individuals who suffer the loss with a probability $\mu_H$ is $\gamma_H$, while the share who suffer the loss with a probability $\mu_L$ is $\gamma_L$. Assume again that there is a unit mass of individuals in the population. There are four types of individuals:
+
+\begin{itemize}
+    \item Type $HH$ suffers a loss of $H$ with probability $\mu_H$ (population share: $\gamma_H\theta_H $)
+    \item Type $LH$ suffers a loss of $H$ with probability $\mu_L$ (population share: $ \gamma_L\theta_H$)
+    \item Type $HL$ suffers a loss of $L$ with probability $\mu_H$ (population share: $\gamma_H\theta_L $)
+    \item Type $LL$ suffers a loss of $L$ with probability $\mu_L$ (population share: $\gamma_L\theta_L $)
+\end{itemize}
+
+where $\theta_H \gamma_H + \theta_H \gamma_L + \theta_L \gamma_H + \theta_L \gamma_L = 1$. It is assumed that the shares in the population are the same as the shares of insurance customers. We will determine the testing and purchasing behavior on the one hand, and the supply of insurance on the other hand, and thus find out whether there is an insurance market equilibrium. It is assumed that taking one costless test reveals both frequency and severity information. We restrict the frequency and severity parameters to the case where $\frac{\mu_H}{\mu_L} = \frac{H}{L}$. This restriction provides a starting point for us to derive a basic result. Without this restriction, the results become complex and will depend on the values of the parameters $q_H, q_L, H$ and $L$. Again, the cost of testing, $c$, is assumed to be zero. 
+
+\subsection{Contracts in the absence of the principle of indemnity}
+
+\setcounter{theorem}{5}
+\renewcommand{\thetheorem}{\arabic{theorem}}
+
+An informed individual who suffers a loss of severity $i$ with probability $\mu_i$ where $i \in \{L,H\}$ solves a maximization problem which identical to (\ref{informed_np_maxproblem}) except that $\mu_i$ replaces $\mu$. Full coverage at actuarially fair prices is optimal. An uninformed individual needs to find the indemnity, $d_{U,np}^*$, which maximizes expected utility $V_{U,np}$:
+
+\begin{align}
+    V_{U,np} & = \underset{\rm d_{U,np}}{\rm max } \{\sum_{i \in \{H,L\}} \sum_{j \in \{H,L\}}\theta_i[\mu_j u(w-\pi_{U,np}-i+d_{U,np})] +(1-\mu_j)u(w-\pi_{U,np}) \}
+\label{uninformed_np_maxproblem_freqsev}
+\end{align}
+
+The optimal $d_{U,np}^*$ is similar to case where only severity is tested, i.e. $d_{U,np}^* = d_{>A} > A = \theta_H H + \theta_L L$. The insurance company will offer an actuarially fair pooling contract, $C_{U,>A} = \{q_U, d_{>A}\}$ where $q_U = \gamma_H \mu_H + \gamma_L \mu_L$.
+
+Under the disclosure duty, insurers can offer tailored contracts for each informed type: $C_{H,H} = \{q_H, H\}$ for type $HH$, $C_{L,H} = \{q_L, H\}$ for type $LH$, $C_{H,L} = \{q_H, L\}$ for type $HL$ and $C_{L,L} = \{q_L, L\}$ for type $LL$. Under the code of conduct, insurers are only able to observe the testing status but not the individual's type, hence it is necessary to offer incentive compatible contracts for individuals who got tested (\citeauthor{rothschild1978equilibrium}, \citeyear{rothschild1978equilibrium}). 
+
+\setcounter{theorem}{7}
+\renewcommand{\thetheorem}{\arabic{theorem}}
+\begin{prop}
+In the absence of the principle of indemnity under the code of conduct, a Bayesian subgame perfect equilibrium arises where tested type $HH$ and $HL$ individuals receive full coverage and tailored contracts but tested type $LH$ and $LL$ individuals receive partial coverage of less than $L$ regardless of severity risk. Contracts offered do not differentiate (in terms of severity) between individuals who suffer a loss with probability $\mu_L$.
+\end{prop}
+
+\begin{proof}
+Suppose the following contracts\footnote{These are the same contracts which are offered under the disclosure duty.} are offered: $C_{H,H}=\{q_H, H\}$, $C_{L,H}=\{q_L, H\}$, $C_{H,L}=\{q_H, L\}$ and $C_{L,L}=\{q_L, L\}$. If an individual gets tested and discovers that she is either the type which suffers a loss with the probability $\mu_H$ or the type which suffers a loss of $H$ with the probability of $\mu_L$, she will prefer the $C_{L,H}$ contract. As a result, from the insurer's point of view, it is crucial to not offer the $C_{L,H}$ contract. This is because type $HL$ individuals strictly prefer $C_{L,H}$ to $C_{H,L}$\footnote{This is due to our simplifying assumption $\frac{\mu_H}{\mu_L} = \frac{H}{L}$. Without this assumption, it is possible for the $C_{L,H}$ contract to be more expensive than the $C_{H,L}$ contract. Thus, in the no-loss state, the $C_{H,L}$ can lead to higher wealth than $C_{L,H}$, outweighing the utility in the loss state, $u(w-q_L H -L + H)$, from purchasing $C_{L,H}$ instead of purchasing $C_{H,L}$. The latter would yield a utility of $u(w-q_H L)$ in both loss and no loss states.} in the absence of the principle of indemnity. Suppose a contract $C_{L,d_{np}^{cc}} = \{q_L, d_{np}^{cc}\}$ is offered where $L<d_{np}^{cc}<H$. Type $HL$ strictly prefers $C_{L,L}$ and $C_{L,d_{np}^{cc}}$ to $C_{H,L}$. Hence, it is necessary that $d_{np}^{cc} < L$ (i.e. contract $C_{L,<L} = \{q_L, <L\}$) and $C_{L,L}$ is not offered to avoid adverse selection.
+\end{proof}
+
+\setcounter{theorem}{1}
+\renewcommand{\thetheorem}{\arabic{theorem}}
+\begin{corollary}
+The value of information can either be positive or negative under the disclosure duty or code of conduct information regime, hence, testing may be optimal under particular parameters.  
+\end{corollary}
+
+Under the consent law, insurers can observe neither an individual's testing status nor type unless the individual chooses to reveal her type information. As a result, insurers can condition certain contracts on the presentation of a particular test result. In the United Kingdom, individuals may voluntarily disclose results from genetic tests. For life and critical illness insurance, if the coverage limit exceeds GBP 500,000 and GBP 300,000 respectively, contracts may be conditioned on genetic tests (\citeauthor{ABI_2018}, \citeyear{ABI_2018}). 
+
+\setcounter{theorem}{8}
+\renewcommand{\thetheorem}{\arabic{theorem}}
+\begin{prop}
+A Nash equilibrium arises under the consent law where individuals are able to purchase type-appropriate contracts. Insurers offer $C_{H,H}$ to individuals who do not present a test result and $C_{L,H}$, $C_{H,L}$ and $C_{L,L}$ to individuals who present a test result. All types are differentiated by contracts.
+\end{prop}
+
+\begin{proof}
+In the case without the principle of indemnity, suppose the insurer offers $C_{H,H}$, $C_{L,H}$, $C_{H,L}$ and $C_{L,L}$ to individuals who present a test result and $C_{U,>A}$ to untested individuals. If individuals decide to get tested, the types which suffer a loss with a probability of $\mu_L$ will reveal their results. Furthermore, due to the restriction of parameters to the case where $\frac{\mu_H}{\mu_L} = \frac{H}{L}$, the individual who suffers a loss of $L$ with a probability of $\mu_H$ is better off purchasing $C_{H,L}$ than pretending to be untested and purchasing $C_{U,>A}$, hence will also reveal type information. For the individual who suffers a loss of $H$ with a probability of $\mu_H$, either $C_{H,H}$ or pretending to be untested and purchasing $C_{U,>A}$ can be optimal depending on the parameters. The insurer, however, can identify type $HH$ individuals through the revelation of the types who suffer a loss with a probability of $\mu_L$ and the contract choice of the type  $HL$ individuals. However, the insurance company cannot observe who is tested until an individual reveals results or chooses a contract meant for tested types. Even after the insurer can confirm that individuals are tested, both $C_{U,>A}$ and $C_{H,H}$, are offered and the insurer will make an expected loss by selling $C_{U,>A}$ to type $HH$ individuals. As a result, the insurer does not offer $C_{U,>A}$. Instead, the insurer offers $C_{H,H}$ to individuals who do not present a test result\footnote{Note that the insurance company can offer any level of coverage to individuals who do not present a test result as long as the premium rate is $q_H$ and premium is $q_H$ multiplied by the coverage level.}. Individuals prefer purchasing $C_{H,H}$ as opposed to remaining uninsured.
+\end{proof}
+
+\setcounter{theorem}{2}
+\renewcommand{\thetheorem}{\arabic{theorem}}
+\begin{corollary}
+    The value of information is positive under the consent law. Individuals can only benefit from testing since they are offered the most expensive contract, $C_{H,H}$ by default.
+\end{corollary}
+
+Under an information ban, the insurer is unable to observe testing status and results, and individuals are not allowed to reveal information about their risk type. In the United States and most of Europe, laws have been enacted to ban the usage of genetic testing in health insurance pricing in general to prevent genetic discrimination (\citeauthor{nill2019use}, \citeyear{nill2019use}). Insurers need to predict whether individuals get tested. However, individuals' testing decisions depend on the contracts on offer. To prevent adverse selection, insurers need to offer incentive compatible contracts, similar to the code of conduct, i.e $C_{H,H}$, $C_{H,L}$ and $C_{L,<L}$ are offered. Since any of one of the offered contracts can be optimal for an uninformed individual depending on the parameters. However, since the contracts are incentive compatible, the value of information is positive by definition under an information ban.
+
+\subsection{Contracts in the presence of the principle of indemnity}
+
+For informed individuals under the disclosure duty, despite the principle of indemnity, the optimal coverage is again simply equal to the loss size when contracts are actuarially fair, just like in the absence of the principle of indemnity. Uninformed individuals solve for the indemnity, $d_{U,p}^*$, which maximizes expected utility $V_{U}$:
+
+\begin{align}
+V_{U,p} = \underset{\rm d_{U,p}}{\rm max } & \{[\sum_{i \in {L,H}} \sum_{j \in {L,H}} \theta_i \mu_j u(w-\pi_{U,p}-i+\text{min}\{i,d_{U,p}\})] + (1-\mu_j)u(w-\pi_{U,p})\}
+\label{uninformed_p_maxproblem_freqsev}
+\end{align}
+
+To satisfy the actuarially fair assumption, the optimal coverage $d_{U,p}^*$ is equal to $H$ at a premium rate of $\widehat{q(H)}= (\gamma_H \mu_H + \gamma_L \mu_L)(\theta_H + \theta_L \frac{L}{H})$. Denote this contract as $C_{\widehat{U},H} = \{\widehat{q(H)}, H\}$.
+
+\setcounter{theorem}{9}
+\renewcommand{\thetheorem}{\arabic{theorem}}
+\begin{prop}
+Under the code of conduct and information ban, informed individuals of type $LH$ and $LL$ again receive partial coverage, however, individuals of type $LH$ are now able to receive more coverage than in the absence of the principle of indemnity. Suppose a Bayesian subgame perfect equilibrium arises when type $HH$ individuals purchase $C_{H,H}$, type $HL$ purchases $C_{H,L}$, type $LH$ purchases $C_{L,<H} = \{q_L,<H\}$ and type $LL$ purchases $C_{L,<L}$. All tested individuals are therefore differentiated by contracts.
+\end{prop}
+
+\begin{proof}
+Suppose the following contracts are offered: $C_{H,H}$, $C_{L,H}$, $C_{H,L}$ and $C_{L,L}$. If an individual gets tested and discovers that she is the type who suffers a loss of $H$ with probability $\mu_H$, she will prefer the $C_{L,H}$ contract. Similarly, if she discovers that she is the type who suffers a loss of $L$ with probability $\mu_H$, she prefers the $C_{L,L}$ contract. Suppose $C_{L,d_{p,H}^{cc}} = \{q_L,d_{p,H}^{cc}\}$ and $C_{L, d_{p,L}^{cc}} = \{q_L, d_{p,L}^{cc}\}$ are the contracts offered by insurers to the type $LH$ and $LL$ individuals respectively. Since the payout in the event of loss is limited to the loss size, the insurer can decrease the coverage in the $C_{L,H}$ and $C_{L,L}$ contracts to $C_{L,<H} = \{q_L, d_{p,H}^{cc}\}$ where $d_{p,H}^{cc} < H$ and $C_{L,<L} = \{q_L, d_{p,L}^{cc}\}$ where $d_{p,L}^{cc}<L$. This result is observed in \citeauthor*{peter2017endogenous} (\citeyear{peter2017endogenous}). 
+\end{proof}
+
+Under the disclosure duty and code of conduct, it is unclear whether the value of information is positive, however, there is a larger difference of expected utilities between testing and forgoing information than in the presence of the principle of indemnity. Additionally, regardless of the principle of indemnity, the value of information under the disclosure duty exceeds the value of information under the code of conduct. See \textbf{Value of information} in the \textbf{Appendix}. 
+
+Under the consent law, the Nash equilibrium is identical to the case in the absence of the principle of indemnity. The only difference is that the pooling contract, $C_{\widehat{U},H}$ is not offered, since an individual of type $HH$ will pretend to be untested, causing the insurer to make a loss from selling $C_{\widehat{U},H}$. $C_{\widehat{U},H}$ is also not offered under the information ban, which means that any contract from $C_{H,H}$, $C_{H,L}$, $C_{L,<H}$ and $C_{L,<L}$ can be optimal depending on the parameters. Since the contracts are incentive compatible, by definition, the value of information under an information ban is positive. It is, however, unclear which information regime yields the greatest gain in utility from testing due to parameter dependency.
+
+\section{Discussion}
+
+One of the major assumptions of our model is that the ratio of individuals with high to low frequency risk is identical to the ratio of individuals with high to low loss severity. This simplifying assumption is used to illustrate the contract choice when individuals are tested or untested, however, under the disclosure duty and code of conduct, it is unclear whether individuals find it optimal to test due to this assumption. Since the ratios can be adjusted in many ways, we leave this to future research.
+
+Another major assumption in our model is that one test can reveal information on both frequency and severity. In reality, the nature of information differs depending on its source, and this, in turns, affects individual choices. An individual can get tested at a hospital or get telematics data from fitness apps analyzed as part of an insurance wellness program (\citeauthor{aziz2019machine}, \citeyear{aziz2019machine}). Information from different outlets are not perfect substitutes. Hospitals might be able to provide information on how an individual's health and family history is linked to disease occurrence and the cost of various treatments available to treat such diseases. Insurance companies might be able to provide information on the average claims amount for an individual with certain characteristics. Information from different sources can have a complementary effect. Individuals can search for suitable insurance contracts (for e.g. deductibles or coinsurance as discussed in \citeauthor{ligon2008adverse} (\citeyear{ligon2008adverse})) or hospitals which provide the treatment for a lower price.
+
+It has also been assumed in this paper that the information is accurate but we need to be aware that it is possible that there can be uncertainty surrounding the obtained information. This can have implications on whether individuals decide to obtain information. The willingness to obtain information might then depend more on the price of information and the individual's perception of whether the price matches her belief of the reliability. Future research can address the complementary effect from various information sources and reliability effects.
+
+It would also be of interest to consider the cost of information. In this paper, we have assumed that information is costless and removes all uncertainty. In reality, there are more than two types of individuals. Removing all uncertainty can be expensive, hence individuals might only remove some uncertainty. The cost of information then depends on the reduction of entropy (\citeauthor{shannon1948mathematical}, 
+\citeyear{shannon1948mathematical}). Additionally, certain types of information may not reveal the type directly. An example is telematics data, which is often used in insurance wellness programs. Insurance companies use the health metrics collected to set premia for the individuals. Individuals who exerted greater effort in preventative measures often receive a discount on the premia (\citeauthor{sharpe2019telematics}, \citeyear{sharpe2019telematics}). However, it is also possible for insurance companies to use these health metrics to discriminate against less healthy individuals (\citeauthor{prince2020insurancewellness}, \citeyear{prince2020insurancewellness}). In addition to insurance companies, conventional tech companies such as Google or manufacturers of fitness trackers (e.g. FitBit, Apple, Garmin) also handle large amounts of consumer health data and can predict health risks based on the individual characteristics and behavior (\citeauthor{bourreau2020google}, \citeyear{bourreau2020google}). Competition or cooperation between conventional tech companies and insurance companies can also influence the cost of information (\citeauthor{pasquale2013protecting}, \citeyear{pasquale2013protecting}). For example, introducing telemonitoring devices into insurance contracts eliminates the need for cross-subsidization, benefiting individuals who value privacy less (\citeauthor{gemmo2019privacy}, \citeyear{gemmo2019privacy}).
+
+The insurance market structure may also affect the contracts offered, especially in more restrictive information regimes like the information ban. An oligopolistic market structure can potentially lead to inefficient insurance outcomes. In combination with the cost of information, the market structure can additionally have an impact, not only on the contracts offered, but also on how insurance products are structured. With information, individuals might consider purchasing several individual contracts and have exactly the coverage needed. However, collecting large amounts of information is not only expensive in financial terms but also time consuming, leading individuals to purchase a non-optimal contract which covers multiple illnesses including certain illnesses the individual does not have a real risk of. Ultimately, the choice between a combination of individual contracts versus a bundle of pre-combined contracts depends on the out-of-pocket costs and the direct and indirect cost of information gathering. This may also be an avenue for future research.
+
+\section{Conclusion}
+
+While the probability of catching a disease or suffering a loss in general has received much attention in research, loss severity has been insufficiently addressed. In this paper, we find that it is important to consider loss severity. The outcomes from considering severity in terms of insurance coverage and testing decisions under various information regimes differ from the outcomes when considering frequency risk. Multiple sclerosis represents one potential application of considering severity, given the various contract offerings and the increasing prevalence of the disease (\citeauthor{flachenecker2017new}, \citeyear{flachenecker2017new}). 
+
+It is important to keep in mind the outcomes which arise from various regulations intended to reduce the inefficiency in the insurance market. Policymakers should be aware that critical illness insurance and regular health insurance serve different functions, hence different information regimes might be suitable for each type of contract. 
+
+In critical illness insurance where the principle of indemnity is absent, individuals benefit from genetic testing when the results are observable and the outcomes which arise are efficient. Since critical illness insurance is meant for losses other than the medical costs which arise, such as lost income from not being able to work during the treatment period, individuals have the highest utility when receiving appropriate coverage depending on their severity. Based on our results, a disclosure duty information regime is the most effective at reaching this equilibrium. When the results are unobservable to insurers, outcomes can also be efficient when the insurance market is perfectly competitive. However, when the insurance market is not perfectly competitive, regulations which prevent the observability of test results can lead to over-insurance for low severity individuals and under-insurance for high severity individuals. Hence, it is especially important that individuals are encouraged to test so that they receive the appropriate lump sum benefit. 
+
+Regular health insurance, on the other hand, cover treatment costs directly related to a disease and works with the principle of indemnity. When the test results are observable, individuals do not test and purchase a contract which has a coverage appropriate for the high severity type. As a result, the high severity individuals underpay and the low risk individuals overpay for insurance and this is an inefficient outcome. When the test results are unobservable, individuals test and self select into insurance contracts, their type-appropriate coverage leading to an efficient outcome. This outcome can be achieved under a consent law or information ban. 
+
+Since individuals would often purchase critical illness insurance and medical insurance, it is important to consider what can happen if there are combination contracts, i.e. regular health insurance with an income supplement (similar to \textit{Krankentagegeld} in Germany, a supplementary insurance for sickness benefit used to cover for lost income during rehabilitation). Under such contracts, the disclosure duty, code of conduct and consent law information regimes lead to an efficient outcome. However, it is important to ensure that both parts of the contract, i.e. the medical cost reimbursement and income supplement are separated, to prevent regulatory arbitrage where insurers use additional income supplement to provide less coverage for medical costs. 
+
+\newpage
+
+\printbibliography[title = {References}]
+
+\appendix
+\section*{Appendix}
+
+\subsection*{\emph{Value of information}}
+
+\subsubsection*{Disclosure duty}
+
+The value of information in the absence of the principle of indemnity is:
+\begin{align}
+\begin{split}
+    V_{info,np}^{dd} & = \theta_H \gamma_H u(w-q_H H-c) + \theta_H \gamma_L u(w-q_L H-c) + \theta_L \gamma_H u(w-q_H L-c) + \theta_L \gamma_L u(w-q_L L-c) \\
+    & - \theta_H [(\gamma_H \mu_H + \gamma_L \mu_L)u(w-q_U A - H + A)] - \theta_L [(\gamma_H \mu_H + \gamma_L \mu_L)u(w-q_U A - L + A)] \\
+    & - [\gamma_H (1-\mu_H) + \gamma_L (1-\mu_L)]u(w-q_U A)
+\end{split}
+\end{align}
+
+The value of information in the presence of the principle of indemnity is:
+\begin{align}
+\begin{split}
+    V_{info,p}^{dd} & = \theta_H \gamma_H u(w-q_H H-c) + \theta_H \gamma_L u(w-q_L H-c) + \theta_L \gamma_H u(w-q_H L-c) + \theta_L \gamma_L u(w-q_L L-c) \\
+    & - u(w-\widehat{q(H)}H)
+\end{split}
+\end{align}
+
+Depending on the share of each type in the population, $V_{info,p}^{dd}$ and $V_{info,np}^{dd}$ can either be positive or negative. Subgame perfect Nash equilibria arise for each type due to the observability of the testing status and result to the insurance company.
+
+Since $q_U A = \widehat{q(H)}H$, due to the concavity of the utility function, there is a larger difference in utility between purchasing the appropriate contract after getting tested and purchasing the pooled contract if uninformed for each type.
+
+
+
+\subsubsection*{Code of conduct}
+
+The value of information in the absence of the principle of indemnity is:
+\begin{align}
+\begin{split}
+    V_{info,np}^{cc} & = \theta_H \gamma_H u(w-q_H H -c) + \theta_H \gamma_L [\mu_L u(w-q_L d_{np}^{cc} - H + d_{np}^{cc}-c) + (1-\mu_L)u(w-q_L d_{np}^{cc}-c)] \\
+    & + \theta_L \gamma_H u(w-q_H L-c) + \theta_L \gamma_L [\mu_L u(w-q_L d_{np}^{cc} - L + d_{np}^{cc}-c) + (1-\mu_L)u(w-q_L d_{np}^{cc}-c)] \\
+    & - \theta_H [(\gamma_H \mu_H + \gamma_L \mu_L)u(w-q_U A - H + A)] - \theta_L [(\gamma_H \mu_H + \gamma_L \mu_L)u(w-q_U A - L + A)] \\
+    & - [\gamma_H (1-\mu_H) + \gamma_L (1-\mu_L)]u(w-q_U A)
+\end{split}
+\end{align}
+
+The value of information in the presence of the principle of indemnity is:
+\begin{align}
+\begin{split}
+    V_{info,p}^{cc} & = \theta_H \gamma_H u(w-q_H H-c) + \theta_H \gamma_L [\mu_L u(w-q_L d_{p,H}^{cc} - H + d_{p,H}^{cc}-c) + (1-\mu_L)u(w-q_L d_{p,H}^{cc}-c)] \\
+    & + \theta_L \gamma_H u(w-q_H L-c) + \theta_L \gamma_L [\mu_L u(w-q_L d_{p,L}^{cc} - L + d_{p,L}^{cc}-c) + (1-\mu_L)u(w-q_L d_{p,L}^{cc}-c)] \\
+    & - u(w-\widehat{q(H)}H)
+\end{split}
+\end{align}
+
+Depending on the share of each type in the population, $V_{info,p}^{cc}$ and $V_{info,np}^{cc}$ can either be positive or negative. 
+
+Since $q_U A = \widehat{q(H)}H$, due to the principle of concavity, there is a larger difference in utility between purchasing the appropriate contract after getting tested and purchasing the pooled contract if uninformed.
+
+Regardless of the principle of indemnity, $V_{info}^{dd} > V_{info}^{cc}$. This is because without the principle of indemnity: $u(w-q_L H) > \mu_L u(w-q_L d_{np}^{cc} - H + d_{np}^{cc}) + (1-\mu_L)u(w-q_L d_{np}^{cc})$ and $u(w-q_L L) > \mu_L u(w-q_L d_{np}^{cc} - L + d_{np}^{cc}) + (1-\mu_L)u(w-q_L d_{np}^{cc})$. With the principle of indemnity: $u(w-q_L H) > \mu_L u(w-q_L d_{p,H}^{cc} - H + d_{p,H}^{cc}) + (1-\mu_L)u(w-q_L d_{p,H}^{cc})$ and $u(w-q_L L) > \mu_L u(w-q_L d_{p,L}^{cc} - L + d_{p,L}^{cc}) + (1-\mu_L)u(w-q_L d_{p,L}^{cc})$.
+
+\subsubsection*{Consent law}
+
+
+The value of information without the principle of indemnity is:
+\begin{align}
+\begin{split}
+    V_{info,np}^{cl} & = \theta_H \gamma_H u(w-q_H H) + \theta_H \gamma_L u(w-q_L H) + \theta_L \gamma_H u(w-q_H L) + \theta_L \gamma_L u(w-q_L L) \\
+    & - \theta_H u(w- q_H H) \\
+    & - \theta_L [(\gamma_L\mu_L+\gamma_H \mu_H) u(w-q_H H - L + H) + (\gamma_L(1-\mu_L) + \gamma_H(1-\mu_H))u(w-q_H H)] > 0
+\end{split}
+\end{align}
+
+The value of information with the principle of indemnity is:
+\begin{align}
+\begin{split}
+    V_{info,p}^{cl} & = \theta_H \gamma_H u(w-q_H H) + \theta_H \gamma_L u(w-q_L H) + \theta_L \gamma_H u(w-q_H L) + \theta_L \gamma_L u(w-q_L L) \\
+    & - u(w-q_H H) > 0
+\end{split}
+\end{align}
+
+Due to the concavity of the utility function, there is a larger gain in utility from testing without the principle of indemnity than with the principle of indemnity. 
+
+Furthermore, $q = \widehat{q(H)}H < q_H H$ $\implies V_{info}^{cl} > V_{info}^{dd}$.
+
+\end{document}
