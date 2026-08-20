@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.16)  17 MAY 2026 16:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.16)  20 AUG 2026 14:23
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**160526_ch1_sat.tex
-(./160526_ch1_sat.tex
+**main.tex
+(./main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/local/texlive/2026/texmf-dist/tex/latex/elsarticle/elsarticle.cls
@@ -88,20 +89,12 @@ File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 \@sep=\skip51
 \@@sep=\skip52
 
-(./160526_ch1_sat.spl)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip53
-\bibsep=\skip54
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count291
-)
+(./main.spl)
 \splwrite=\write3
-\openout3 = `160526_ch1_sat.spl'.
+\openout3 = `main.spl'.
 
 \appnamewidth=\dimen155
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/color.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -151,14 +144,14 @@ tered.code.tex
 \pgf@yd=\dimen167
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count292
-\c@pgf@countb=\count293
-\c@pgf@countc=\count294
-\c@pgf@countd=\count295
+\c@pgf@counta=\count291
+\c@pgf@countb=\count292
+\c@pgf@countc=\count293
+\c@pgf@countd=\count294
 \t@pgf@toka=\toks24
 \t@pgf@tokb=\toks25
 \t@pgf@tokc=\toks26
-\pgf@sys@id@count=\count296
+\pgf@sys@id@count=\count295
 
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
@@ -176,8 +169,8 @@ File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count297
-\pgfsyssoftpath@bigbuffer@items=\count298
+\pgfsyssoftpath@smallbuffer@items=\count296
+\pgfsyssoftpath@bigbuffer@items=\count297
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -208,7 +201,7 @@ Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen168
-\pgfmath@count=\count299
+\pgfmath@count=\count298
 \pgfmath@box=\box60
 \pgfmath@toks=\toks27
 \pgfmath@stack@operand=\toks28
@@ -234,7 +227,7 @@ code.tex)
 erarithmetics.code.tex)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count300
+\c@pgfmathroundto@lastzeros=\count299
 )) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -272,7 +265,7 @@ File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box61
 \pgf@hbox=\box62
 \pgf@layerbox@main=\box63
-\pgf@picture@serial@count=\count301
+\pgf@picture@serial@count=\count300
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -307,8 +300,8 @@ File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 e.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen192
-\pgf@sys@shading@range@num=\count302
-\pgf@shadingcount=\count303
+\pgf@sys@shading@range@num=\count301
+\pgf@shadingcount=\count302
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -373,7 +366,7 @@ Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count304
+\pgf@plot@mark@count=\count303
 \pgfplotmarksize=\dimen197
 )
 \tikz@lastx=\dimen198
@@ -388,19 +381,19 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@figbox@bg=\box67
 \tikz@tempbox=\box68
 \tikz@tempbox@bg=\box69
-\tikztreelevel=\count305
-\tikznumberofchildren=\count306
-\tikznumberofcurrentchild=\count307
-\tikz@fig@count=\count308
+\tikztreelevel=\count304
+\tikznumberofchildren=\count305
+\tikznumberofcurrentchild=\count306
+\tikz@fig@count=\count307
 
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count309
-\pgfmatrixcurrentcolumn=\count310
-\pgf@matrix@numberofcolumns=\count311
+\pgfmatrixcurrentrow=\count308
+\pgfmatrixcurrentcolumn=\count309
+\pgf@matrix@numberofcolumns=\count310
 )
-\tikz@expandcount=\count312
+\tikz@expandcount=\count311
 
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -423,11 +416,11 @@ Package: soul-ori 2026-03-06 v3.2 letterspacing/underlining (mf)
 \SOUL@hyphkern=\dimen265
 \SOUL@dimen=\dimen266
 \SOUL@dimeni=\dimen267
-\SOUL@minus=\count313
-\SOUL@comma=\count314
-\SOUL@apo=\count315
-\SOUL@grave=\count316
-\SOUL@spaceskip=\skip55
+\SOUL@minus=\count312
+\SOUL@comma=\count313
+\SOUL@apo=\count314
+\SOUL@grave=\count315
+\SOUL@spaceskip=\skip53
 \SOUL@ttwidth=\dimen268
 \SOUL@uldp=\dimen269
 \SOUL@ulht=\dimen270
@@ -443,14 +436,14 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 )))
 (/usr/local/texlive/2026/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip56
-\multirow@cntb=\count317
-\multirow@dima=\skip57
+\multirow@colwidth=\skip54
+\multirow@cntb=\count316
+\multirow@dima=\skip55
 \bigstrutjot=\dimen271
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count318
+\c@float@type=\count317
 \float@exts=\toks38
 \float@box=\box70
 \@float@everytoks=\toks39
@@ -462,8 +455,8 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \ar@mcellbox=\box72
 \extrarowheight=\dimen273
 \NC@list=\toks40
-\extratabsurround=\skip58
-\backup@length=\skip59
+\extratabsurround=\skip56
+\backup@length=\skip57
 \ar@cellbox=\box73
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
@@ -478,12 +471,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen281
 \cmidrulekern=\dimen282
 \defaultaddspace=\dimen283
-\@cmidla=\count319
-\@cmidlb=\count320
+\@cmidla=\count318
+\@cmidlb=\count319
 \@aboverulesep=\dimen284
 \@belowrulesep=\dimen285
-\@thisruleclass=\count321
-\@lastruleclass=\count322
+\@thisruleclass=\count320
+\@lastruleclass=\count321
 \@thisrulewidth=\dimen286
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/arydshln/arydshln.sty
@@ -496,23 +489,23 @@ Package: arydshln 2019/02/21 v1.76
 \adl@depth=\dimen291
 \adl@depthsave=\dimen292
 \adl@finaldepth=\dimen293
-\adl@columns=\count323
-\adl@ncol=\count324
-\adl@currentcolumn=\count325
-\adl@currentcolumnsave=\count326
-\adl@totalheight=\count327
-\adl@totalheightsave=\count328
-\adl@dash=\count329
-\adl@gap=\count330
-\adl@cla=\count331
-\adl@clb=\count332
+\adl@columns=\count322
+\adl@ncol=\count323
+\adl@currentcolumn=\count324
+\adl@currentcolumnsave=\count325
+\adl@totalheight=\count326
+\adl@totalheightsave=\count327
+\adl@dash=\count328
+\adl@gap=\count329
+\adl@cla=\count330
+\adl@clb=\count331
 \adl@everyvbox=\toks41
 \adl@LTpagetotal=\dimen294
 )
 ==> First Aid for arydshln.sty applied!
 (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
-\@mathmargin=\skip60
+\@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -530,14 +523,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count333
+\inf@bad=\count332
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count334
-\leftroot@=\count335
+\uproot@=\count333
+\leftroot@=\count334
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count336
-\DOTSCASE@=\count337
+\classnum@=\count335
+\DOTSCASE@=\count336
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -550,20 +543,20 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen297
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count338
+\macc@depth=\count337
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count339
+\c@MaxMatrixCols=\count338
 \dotsspace@=\muskip17
-\c@parentequation=\count340
-\dspbrk@lvl=\count341
+\c@parentequation=\count339
+\dspbrk@lvl=\count340
 \tag@help=\toks43
-\row@=\count342
-\column@=\count343
-\maxfields@=\count344
+\row@=\count341
+\column@=\count342
+\maxfields@=\count343
 \andhelp@=\toks44
 \eqnshift@=\dimen298
 \alignsep@=\dimen299
@@ -572,8 +565,8 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \totwidth@=\dimen302
 \lineht@=\dimen303
 \@envbody=\toks45
-\multlinegap=\skip61
-\multlinetaggap=\skip62
+\multlinegap=\skip59
+\multlinetaggap=\skip60
 \mathdisplay@stack=\toks46
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
@@ -586,17 +579,17 @@ Package: mcode 2014/03/06 2.5
  - automatic line breaking enabled (careful, buggy!)
  - framed listings
 (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count345
+\lst@mode=\count344
 \lst@gtempboxa=\box77
 \lst@token=\toks47
-\lst@length=\count346
+\lst@length=\count345
 \lst@currlwidth=\dimen304
-\lst@column=\count347
-\lst@pos=\count348
+\lst@column=\count346
+\lst@pos=\count347
 \lst@lostspace=\dimen305
 \lst@width=\dimen306
-\lst@newlines=\count349
-\lst@lineno=\count350
+\lst@newlines=\count348
+\lst@lineno=\count349
 \lst@maxwidth=\dimen307
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstpatch.sty
@@ -604,8 +597,8 @@ File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\c@lstnumber=\count351
-\lst@skipnumbers=\count352
+\c@lstnumber=\count350
+\lst@skipnumbers=\count351
 \lst@framebox=\box78
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/listings.cfg
@@ -631,9 +624,9 @@ Package: geometry 2026/03/07 v6.0 Page Geometry
 (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count353
-\Gm@cntv=\count354
-\c@Gm@tempcnt=\count355
+\Gm@cnth=\count352
+\Gm@cntv=\count353
+\c@Gm@tempcnt=\count354
 \Gm@bindingoffset=\dimen308
 \Gm@wd@mp=\dimen309
 \Gm@odd@mp=\dimen310
@@ -662,9 +655,9 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headfont=\toks51
 \thm@notefont=\toks52
 \thm@headpunct=\toks53
-\thm@preskip=\skip63
-\thm@postskip=\skip64
-\thm@headsep=\skip65
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
 \dth@everypar=\toks54
 LaTeX Info: Redefining \qed on input line 273.
 )
@@ -695,16 +688,16 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count356
-\calc@Bcount=\count357
+\calc@Acount=\count355
+\calc@Bcount=\count356
 \calc@Adimen=\dimen324
 \calc@Bdimen=\dimen325
-\calc@Askip=\skip66
-\calc@Bskip=\skip67
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count358
-\calc@Cskip=\skip68
+\calc@Ccount=\count357
+\calc@Cskip=\skip66
 )
 \diagbox@boxa=\box80
 \diagbox@boxb=\box81
@@ -719,8 +712,8 @@ LaTeX Info: Redefining \addtolength on input line 87.
 (/usr/local/texlive/2026/texmf-dist/tex/generic/systeme/systeme.sty
 (/usr/local/texlive/2026/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2026/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count359
-\xs_countb=\count360
+\xs_counta=\count358
+\xs_countb=\count359
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
@@ -732,7 +725,7 @@ Package: simplekv 2025/06/15 v0.32 Simple keyval package (CT)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/simplekv/simplekv.tex)
 \SYS_tab_toks=\toks56
 \SYS_preamble_toks=\toks57
-\SYSeqnum=\count361
+\SYSeqnum=\count360
 LaTeX Font Info:    Trying to load font information for U+msa on input line 492
 .
 
@@ -762,30 +755,30 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )))
 (/usr/local/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip69
+\labelindent=\skip67
 \enit@outerparindent=\dimen332
 \enit@toks=\toks58
 \enit@inbox=\box83
-\enit@count@id=\count362
-\enitdp@description=\count363
+\enit@count@id=\count361
+\enitdp@description=\count362
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip70
-\f@nch@offset@elh=\skip71
-\f@nch@offset@erh=\skip72
-\f@nch@offset@olh=\skip73
-\f@nch@offset@orh=\skip74
-\f@nch@offset@elf=\skip75
-\f@nch@offset@erf=\skip76
-\f@nch@offset@olf=\skip77
-\f@nch@offset@orf=\skip78
-\f@nch@height=\skip79
-\f@nch@footalignment=\skip80
-\f@nch@widthL=\skip81
-\f@nch@widthC=\skip82
-\f@nch@widthR=\skip83
+\f@nch@headwidth=\skip68
+\f@nch@offset@elh=\skip69
+\f@nch@offset@erh=\skip70
+\f@nch@offset@olh=\skip71
+\f@nch@offset@orh=\skip72
+\f@nch@offset@elf=\skip73
+\f@nch@offset@erf=\skip74
+\f@nch@offset@olf=\skip75
+\f@nch@offset@orf=\skip76
+\f@nch@height=\skip77
+\f@nch@footalignment=\skip78
+\f@nch@widthL=\skip79
+\f@nch@widthC=\skip80
+\f@nch@widthR=\skip81
 \@temptokenb=\toks59
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/bbm-macros/bbm.sty
@@ -814,16 +807,16 @@ Package caption Info: elsarticle document class detected.
 File: caption-elsarticle.sto 2020/08/22 v2.0 Adaption of the caption package to
  the elsarticle document class (AR)
 ))
-\c@caption@flags=\count364
-\c@continuedfloat=\count365
+\c@caption@flags=\count363
+\c@continuedfloat=\count364
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count366
+\c@subfigure=\count365
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count367
+\c@subtable=\count366
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
@@ -837,7 +830,7 @@ Package pdftexcmds Info: \pdfdraftmode found.
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count368
+\lrq@indent=\count367
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -849,85 +842,66 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-
-! Package biblatex Error: Incompatible package 'natbib'.
-
-See the biblatex package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.213 \blx@packageincompatibility
-                                 
-? 
-\c@tabx@nest=\count369
-\c@listtotal=\count370
-\c@listcount=\count371
-\c@liststart=\count372
-\c@liststop=\count373
-\c@citecount=\count374
-\c@citetotal=\count375
-\c@multicitecount=\count376
-\c@multicitetotal=\count377
-\c@instcount=\count378
-\c@maxnames=\count379
-\c@minnames=\count380
-\c@maxitems=\count381
-\c@minitems=\count382
-\c@citecounter=\count383
-\c@maxcitecounter=\count384
-\c@savedcitecounter=\count385
-\c@uniquelist=\count386
-\c@uniquename=\count387
-\c@refsection=\count388
-\c@refsegment=\count389
-\c@maxextratitle=\count390
-\c@maxextratitleyear=\count391
-\c@maxextraname=\count392
-\c@maxextradate=\count393
-\c@maxextraalpha=\count394
-\c@abbrvpenalty=\count395
-\c@highnamepenalty=\count396
-\c@lownamepenalty=\count397
-\c@maxparens=\count398
-\c@parenlevel=\count399
-\blx@tempcnta=\count400
-\blx@tempcntb=\count401
-\blx@tempcntc=\count402
-\c@blx@maxsection=\count403
-\blx@maxsegment@0=\count404
-\blx@notetype=\count405
-\blx@parenlevel@text=\count406
-\blx@parenlevel@foot=\count407
-\blx@sectionciteorder@0=\count408
-\blx@sectionciteorderinternal@0=\count409
-\blx@entrysetcounter=\count410
-\blx@biblioinstance=\count411
-\labelnumberwidth=\skip84
-\labelalphawidth=\skip85
-\biblabelsep=\skip86
-\bibitemsep=\skip87
-\bibnamesep=\skip88
-\bibinitsep=\skip89
-\bibparsep=\skip90
-
-! LaTeX Error: Command \bibhang already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.909 \newlength{\bibhang}
-                          
-? 
+\c@tabx@nest=\count368
+\c@listtotal=\count369
+\c@listcount=\count370
+\c@liststart=\count371
+\c@liststop=\count372
+\c@citecount=\count373
+\c@citetotal=\count374
+\c@multicitecount=\count375
+\c@multicitetotal=\count376
+\c@instcount=\count377
+\c@maxnames=\count378
+\c@minnames=\count379
+\c@maxitems=\count380
+\c@minitems=\count381
+\c@citecounter=\count382
+\c@maxcitecounter=\count383
+\c@savedcitecounter=\count384
+\c@uniquelist=\count385
+\c@uniquename=\count386
+\c@refsection=\count387
+\c@refsegment=\count388
+\c@maxextratitle=\count389
+\c@maxextratitleyear=\count390
+\c@maxextraname=\count391
+\c@maxextradate=\count392
+\c@maxextraalpha=\count393
+\c@abbrvpenalty=\count394
+\c@highnamepenalty=\count395
+\c@lownamepenalty=\count396
+\c@maxparens=\count397
+\c@parenlevel=\count398
+\blx@tempcnta=\count399
+\blx@tempcntb=\count400
+\blx@tempcntc=\count401
+\c@blx@maxsection=\count402
+\blx@maxsegment@0=\count403
+\blx@notetype=\count404
+\blx@parenlevel@text=\count405
+\blx@parenlevel@foot=\count406
+\blx@sectionciteorder@0=\count407
+\blx@sectionciteorderinternal@0=\count408
+\blx@entrysetcounter=\count409
+\blx@biblioinstance=\count410
+\labelnumberwidth=\skip82
+\labelalphawidth=\skip83
+\biblabelsep=\skip84
+\bibitemsep=\skip85
+\bibnamesep=\skip86
+\bibinitsep=\skip87
+\bibparsep=\skip88
+\bibhang=\skip89
 \blx@bcfin=\read3
 \blx@bcfout=\write5
 \blx@langwohyphens=\language91
-\c@mincomprange=\count412
-\c@maxcomprange=\count413
-\c@mincompwidth=\count414
+\c@mincomprange=\count411
+\c@maxcomprange=\count412
+\c@mincompwidth=\count413
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
@@ -935,102 +909,91 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count415
-\c@savedafterword=\count416
-\c@annotator=\count417
-\c@savedannotator=\count418
-\c@author=\count419
-\c@savedauthor=\count420
-\c@bookauthor=\count421
-\c@savedbookauthor=\count422
-\c@commentator=\count423
-\c@savedcommentator=\count424
-\c@editor=\count425
-\c@savededitor=\count426
-\c@editora=\count427
-\c@savededitora=\count428
-\c@editorb=\count429
-\c@savededitorb=\count430
-\c@editorc=\count431
-\c@savededitorc=\count432
-\c@foreword=\count433
-\c@savedforeword=\count434
-\c@holder=\count435
-\c@savedholder=\count436
-\c@introduction=\count437
-\c@savedintroduction=\count438
-\c@namea=\count439
-\c@savednamea=\count440
-\c@nameb=\count441
-\c@savednameb=\count442
-\c@namec=\count443
-\c@savednamec=\count444
-\c@translator=\count445
-\c@savedtranslator=\count446
-\c@shortauthor=\count447
-\c@savedshortauthor=\count448
-\c@shorteditor=\count449
-\c@savedshorteditor=\count450
-\c@labelname=\count451
-\c@savedlabelname=\count452
-\c@institution=\count453
-\c@savedinstitution=\count454
-\c@lista=\count455
-\c@savedlista=\count456
-\c@listb=\count457
-\c@savedlistb=\count458
-\c@listc=\count459
-\c@savedlistc=\count460
-\c@listd=\count461
-\c@savedlistd=\count462
-\c@liste=\count463
-\c@savedliste=\count464
-\c@listf=\count465
-\c@savedlistf=\count466
-\c@location=\count467
-\c@savedlocation=\count468
-\c@organization=\count469
-\c@savedorganization=\count470
-\c@origlocation=\count471
-\c@savedoriglocation=\count472
-\c@origpublisher=\count473
-\c@savedorigpublisher=\count474
-\c@publisher=\count475
-\c@savedpublisher=\count476
-\c@language=\count477
-\c@savedlanguage=\count478
-\c@origlanguage=\count479
-\c@savedoriglanguage=\count480
-\c@pageref=\count481
-\c@savedpageref=\count482
-\shorthandwidth=\skip91
-\shortjournalwidth=\skip92
-\shortserieswidth=\skip93
-\shorttitlewidth=\skip94
-\shortauthorwidth=\skip95
-\shorteditorwidth=\skip96
-\locallabelnumberwidth=\skip97
-\locallabelalphawidth=\skip98
-\localshorthandwidth=\skip99
-\localshortjournalwidth=\skip100
-\localshortserieswidth=\skip101
-\localshorttitlewidth=\skip102
-\localshortauthorwidth=\skip103
-\localshorteditorwidth=\skip104
-
-
-! LaTeX Error: Command \citename already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12802 ...*{\citename}{\blx@citexpunct{citename}}
-                                                  
-? 
+\c@afterword=\count414
+\c@savedafterword=\count415
+\c@annotator=\count416
+\c@savedannotator=\count417
+\c@author=\count418
+\c@savedauthor=\count419
+\c@bookauthor=\count420
+\c@savedbookauthor=\count421
+\c@commentator=\count422
+\c@savedcommentator=\count423
+\c@editor=\count424
+\c@savededitor=\count425
+\c@editora=\count426
+\c@savededitora=\count427
+\c@editorb=\count428
+\c@savededitorb=\count429
+\c@editorc=\count430
+\c@savededitorc=\count431
+\c@foreword=\count432
+\c@savedforeword=\count433
+\c@holder=\count434
+\c@savedholder=\count435
+\c@introduction=\count436
+\c@savedintroduction=\count437
+\c@namea=\count438
+\c@savednamea=\count439
+\c@nameb=\count440
+\c@savednameb=\count441
+\c@namec=\count442
+\c@savednamec=\count443
+\c@translator=\count444
+\c@savedtranslator=\count445
+\c@shortauthor=\count446
+\c@savedshortauthor=\count447
+\c@shorteditor=\count448
+\c@savedshorteditor=\count449
+\c@labelname=\count450
+\c@savedlabelname=\count451
+\c@institution=\count452
+\c@savedinstitution=\count453
+\c@lista=\count454
+\c@savedlista=\count455
+\c@listb=\count456
+\c@savedlistb=\count457
+\c@listc=\count458
+\c@savedlistc=\count459
+\c@listd=\count460
+\c@savedlistd=\count461
+\c@liste=\count462
+\c@savedliste=\count463
+\c@listf=\count464
+\c@savedlistf=\count465
+\c@location=\count466
+\c@savedlocation=\count467
+\c@organization=\count468
+\c@savedorganization=\count469
+\c@origlocation=\count470
+\c@savedoriglocation=\count471
+\c@origpublisher=\count472
+\c@savedorigpublisher=\count473
+\c@publisher=\count474
+\c@savedpublisher=\count475
+\c@language=\count476
+\c@savedlanguage=\count477
+\c@origlanguage=\count478
+\c@savedoriglanguage=\count479
+\c@pageref=\count480
+\c@savedpageref=\count481
+\shorthandwidth=\skip90
+\shortjournalwidth=\skip91
+\shortserieswidth=\skip92
+\shorttitlewidth=\skip93
+\shortauthorwidth=\skip94
+\shorteditorwidth=\skip95
+\locallabelnumberwidth=\skip96
+\locallabelalphawidth=\skip97
+\localshorthandwidth=\skip98
+\localshortjournalwidth=\skip99
+\localshortserieswidth=\skip100
+\localshorttitlewidth=\skip101
+\localshortauthorwidth=\skip102
+\localshorteditorwidth=\skip103
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
@@ -1039,60 +1002,32 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count483
-\c@textcitetotal=\count484
-\c@textcitemaxnames=\count485
-\c@biburlbigbreakpenalty=\count486
-\c@biburlbreakpenalty=\count487
-\c@biburlnumpenalty=\count488
-\c@biburlucpenalty=\count489
-\c@biburllcpenalty=\count490
+\c@textcitecount=\count482
+\c@textcitetotal=\count483
+\c@textcitemaxnames=\count484
+\c@biburlbigbreakpenalty=\count485
+\c@biburlbreakpenalty=\count486
+\c@biburlnumpenalty=\count487
+\c@biburlucpenalty=\count488
+\c@biburllcpenalty=\count489
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-
-
-! LaTeX Error: Command \bibfont already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.339 ...ommand*{\bibfont}{\normalfont\normalsize}
-                                                  
-? 
-\c@smartand=\count491
-
-Package biblatex Warning: Redefining '\citeauthor'.
-
-
-Package biblatex Warning: Redefining '\citeyear'.
-
-
-! LaTeX Error: Command \Citeauthor already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2625 ...e\citeauthor*}{\bibsentence\citeauthor}}
-                                                  
-? 
+\c@smartand=\count490
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
 File: authoryear.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count492
-\c@bbx:relatedtotal=\count493
+\c@bbx:relatedcount=\count491
+\c@bbx:relatedtotal=\count492
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -1130,25 +1065,25 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@old@col=\dimen343
 \TX@target=\dimen344
 \TX@delta=\dimen345
-\TX@cols=\count494
+\TX@cols=\count493
 \TX@ftn=\toks60
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
-\CenteringLeftskip=\skip105
-\RaggedLeftLeftskip=\skip106
-\RaggedRightLeftskip=\skip107
-\CenteringRightskip=\skip108
-\RaggedLeftRightskip=\skip109
-\RaggedRightRightskip=\skip110
-\CenteringParfillskip=\skip111
-\RaggedLeftParfillskip=\skip112
-\RaggedRightParfillskip=\skip113
-\JustifyingParfillskip=\skip114
-\CenteringParindent=\skip115
-\RaggedLeftParindent=\skip116
-\RaggedRightParindent=\skip117
-\JustifyingParindent=\skip118
+\CenteringLeftskip=\skip104
+\RaggedLeftLeftskip=\skip105
+\RaggedRightLeftskip=\skip106
+\CenteringRightskip=\skip107
+\RaggedLeftRightskip=\skip108
+\RaggedRightRightskip=\skip109
+\CenteringParfillskip=\skip110
+\RaggedLeftParfillskip=\skip111
+\RaggedRightParfillskip=\skip112
+\JustifyingParfillskip=\skip113
+\CenteringParindent=\skip114
+\RaggedLeftParindent=\skip115
+\RaggedRightParindent=\skip116
+\JustifyingParindent=\skip117
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
@@ -1359,9 +1294,9 @@ Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
 (/usr/local/texlive/2026/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count495
+\g_MT_multlinerow_int=\count494
 \l_MT_multwidth_dim=\dimen346
-\origjot=\skip119
+\origjot=\skip118
 \l_MT_shortvdotswithinadjustabove_dim=\dimen347
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen348
 \l_MT_above_intertext_sep=\dimen349
@@ -1377,14 +1312,14 @@ Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
 (/usr/local/texlive/2026/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen354
-\c@nlinenum=\count496
+\c@nlinenum=\count495
 \TeXr@lab=\toks61
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count497
-\c@@ppsavesec=\count498
-\c@@ppsaveapp=\count499
+\c@@pps=\count496
+\c@@ppsavesec=\count497
+\c@@ppsaveapp=\count498
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
@@ -1392,8 +1327,8 @@ Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 (/usr/local/texlive/2026/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box85
-\beforetitleunit=\skip120
-\aftertitleunit=\skip121
+\beforetitleunit=\skip119
+\aftertitleunit=\skip120
 \ttl@plus=\dimen355
 \ttl@minus=\dimen356
 \ttl@toksa=\toks62
@@ -1406,7 +1341,7 @@ Package titlesec Warning: Non standard sectioning command \paragraph
 (titlesec)                detected. Using default spacing and no format.
 
 )
-\enitdp@todolist=\count500
+\enitdp@todolist=\count499
  (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
@@ -1421,135 +1356,78 @@ LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-\c@theorem=\count501
-\c@assumption=\count502
-\c@theoremn=\count503
-\c@corollaryn=\count504
-\c@propn=\count505
-\c@conjn=\count506
+\c@theorem=\count500
+\c@assumption=\count501
+\c@theoremn=\count502
+\c@corollaryn=\count503
+\c@propn=\count504
+\c@conjn=\count505
+\@quotelevel=\count506
+\@quotereset=\count507
+LaTeX Font Info:    Trying to load font information for T1+fnc on input line 16
+1.
 
-\emailauthor{gruendl@finance.uni-frankfurt.de}{Helmut Gründl\fnref {fn1}}
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.177 \begin{abstract}
-                      
-? 
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.177 \begin{abstract}
-                      
-? 
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 \footnotesize{W
-                     e theoretically analyze how identifying severity throug...
-
-? 
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.182 \textbf{Keywords:}
-                         insurance, severity, genetic testing
-? 
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184 \textbf{JEL Classification:}
-                                   D80, D81
-? 
-\@quotelevel=\count507
-\@quotereset=\count508
-LaTeX Font Info:    Trying to load font information for T1+fnc on input line 18
-8.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 188.
+(Font)              scaled to size 13.39188pt on input line 161.
+ (./main.aux)
+\openout1 = `main.aux'.
 
-
-LaTeX Warning: Unused global option(s):
-    [natbib].
-
-(./160526_ch1_sat.aux)
-\openout1 = `160526_ch1_sat.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 188.
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 188.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 161.
 LaTeX Font Info:    Trying to load font information for FML+fncmi on input line
- 188.
+ 161.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 161.
 LaTeX Font Info:    Trying to load font information for FMS+fncm on input line 
-188.
+161.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 188.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 161.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-188.
+161.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    ... okay on input line 161.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 188.
+(Font)              scaled to size 11.15991pt on input line 161.
 
 (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count509
+\scratchcounter=\count508
 \scratchdimen=\dimen360
 \scratchbox=\box86
-\nofMPsegments=\count510
-\nofMParguments=\count511
+\nofMPsegments=\count509
+\nofMParguments=\count510
 \everyMPshowfont=\toks63
-\MPscratchCnt=\count512
+\MPscratchCnt=\count511
 \MPscratchDim=\dimen361
-\MPnumerator=\count513
-\makeMPintoPDFobject=\count514
+\MPnumerator=\count512
+\makeMPintoPDFobject=\count513
 \everyMPtoPDFconversion=\toks64
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1560,7 +1438,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count515
+\c@lstlisting=\count514
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1606,192 +1484,166 @@ File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout5 = `160526_ch1_sat.bcf'.
+\openout5 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file '160526_ch1_sat.bbl' found.
+Package biblatex Info: ... file 'main.bbl' found.
 
-(./160526_ch1_sat.bbl)
-Package biblatex Info: Reference section=0 on input line 188.
-Package biblatex Info: Reference segment=0 on input line 188.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 188.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 188.
+(./main.bbl)
+Package biblatex Info: Reference section=0 on input line 161.
+Package biblatex Info: Reference segment=0 on input line 161.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 161.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 161.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 11.15991pt on input line 184.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 193.
+(Font)              scaled to size 9.29993pt on input line 186.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 9.29993pt on input line 189.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 193.
+(Font)              scaled to size 7.06795pt on input line 195.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 193.
+(Font)              scaled to size 5.57996pt on input line 195.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 193.
+(Font)              scaled to size 9.19998pt on input line 195.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 193.
+(Font)              scaled to size 6.99199pt on input line 195.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 193.
+(Font)              scaled to size 5.51999pt on input line 195.
 LaTeX Font Info:    Trying to load font information for FML+fncm on input line 
-193.
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
+195.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 193.
+(Font)              scaled to size 9.19998pt on input line 195.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 193.
+(Font)              scaled to size 6.99199pt on input line 195.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 193.
-LaTeX Font Info:    Calculating math sizes for size <7.6> on input line 193.
+(Font)              scaled to size 5.51999pt on input line 195.
+LaTeX Font Info:    Calculating math sizes for size <7.6> on input line 195.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.37158pt on input line 193.
+(Font)              scaled to size 5.37158pt on input line 195.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 4.2408pt on input line 193.
+(Font)              scaled to size 4.2408pt on input line 195.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.31386pt on input line 193.
+(Font)              scaled to size 5.31386pt on input line 195.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 4.19522pt on input line 193.
+(Font)              scaled to size 4.19522pt on input line 195.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.31386pt on input line 193.
+(Font)              scaled to size 5.31386pt on input line 195.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 4.19522pt on input line 193.
+(Font)              scaled to size 4.19522pt on input line 195.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 16.07027pt on input line 193.
+(Font)              scaled to size 16.07027pt on input line 195.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 193.
+(Font)              scaled to size 8.36993pt on input line 195.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 6.50995pt on input line 193.
+(Font)              scaled to size 6.50995pt on input line 195.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 193.
+(Font)              scaled to size 11.03998pt on input line 195.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 193.
+(Font)              scaled to size 8.27998pt on input line 195.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 193.
+(Font)              scaled to size 6.43999pt on input line 195.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 193.
+(Font)              scaled to size 11.03998pt on input line 195.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 193.
+(Font)              scaled to size 8.27998pt on input line 195.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 193.
+(Font)              scaled to size 6.43999pt on input line 195.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 9.29993pt on input line 193.
+(Font)              scaled to size 9.29993pt on input line 195.
  [1
 
 
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 198.
- [2] [3] [4]
+al/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] [4]
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 11.15991pt on input line 228.
- [5] [6] [7]
-! Undefined control sequence.
-<argument>  \theta _H u (w-\muH 
-                                )+\theta _L u(w-\mu L)>\theta _H E_\mu \left...
-l.360     \end{align*}
-                      
-? 
-! Undefined control sequence.
-<argument>  \theta _H u (w-\muH 
-                                )+\theta _L u(w-\mu L)>\theta _H E_\mu \left...
-l.360     \end{align*}
-                      
-? 
+(Font)              scaled to size 11.15991pt on input line 230.
 
-Overfull \hbox (24.4322pt too wide) detected at line 360
-[]
- []
-
-[8] [9]
-LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
-(Font)              scaled to size 11.15991pt on input line 407.
- [10] [11] [12] [13]
-LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 5
-02.
+[5] [6] [7] [8] [9] [10] [11]
+LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 4
+53.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
 File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
 )
 LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 502.
- [14]
-[15] [16] [17] [18] [19] [20]
+(Font)              scaled to size 11.15991pt on input line 453.
+ [12]
+[13] [14] [15] [16] [17]
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 11.15991pt on input line 614.
- [21{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.en
-c}] [22]
-Overfull \hbox (21.23906pt too wide) detected at line 630
+(Font)              scaled to size 11.15991pt on input line 565.
+ [18{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.en
+c}] [19]
+Overfull \hbox (21.23906pt too wide) detected at line 581
 []
  []
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 630--630
+Overfull \hbox (30.0pt too wide) in paragraph at lines 581--581
 [] 
  []
 
 
-Overfull \hbox (15.76707pt too wide) detected at line 638
+Overfull \hbox (15.76707pt too wide) detected at line 589
 []
  []
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 638--638
+Overfull \hbox (30.0pt too wide) in paragraph at lines 589--589
 [] 
  []
 
-[23]
-Overfull \hbox (13.4623pt too wide) detected at line 656
+[20]
+Overfull \hbox (13.4623pt too wide) detected at line 607
 []
  []
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 656--656
+Overfull \hbox (30.0pt too wide) in paragraph at lines 607--607
 [] 
  []
 
 
-Overfull \hbox (21.67928pt too wide) detected at line 665
+Overfull \hbox (21.67928pt too wide) detected at line 616
 []
  []
 
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 665--665
+Overfull \hbox (30.0pt too wide) in paragraph at lines 616--616
 [] 
  []
 
-[24] [25] (./160526_ch1_sat.aux)
+[21] [22] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-Package logreq Info: Writing requests to '160526_ch1_sat.run.xml'.
-\openout1 = `160526_ch1_sat.run.xml'.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30744 strings out of 467525
- 582303 string characters out of 5418982
- 1410620 words of memory out of 5000000
- 59063 multiletter control sequences out of 15000+600000
- 722468 words of font info for 189 fonts, out of 8000000 for 9000
+ 30385 strings out of 467525
+ 577357 string characters out of 5418982
+ 1401434 words of memory out of 5000000
+ 58717 multiletter control sequences out of 15000+600000
+ 707463 words of font info for 179 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,104p,2459b,1944s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb
-></usr/local/texlive/2026/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb
-></usr/local/texlive/2026/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb>
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb
-></usr/local/texlive/2026/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb>
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
-pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></u
-sr/local/texlive/2026/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/loca
-l/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/
-texlive/2026/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive
-/2026/texmf-dist/fonts/type1/urw/ncntrsbk/uncbi8a.pfb></usr/local/texlive/2026/
-texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2026/texmf-d
-ist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on 160526_ch1_sat.pdf (25 pages, 236911 bytes).
+ 84i,15n,104p,2616b,1943s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/fourier/fourier-mex.pf
+b></usr/local/texlive/2026/texmf-dist/fonts/type1/public/fourier/fourier-mlit.p
+fb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/fourier/fourier-ms.pf
+b></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+</usr/local/texlive/2026/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/l
+ocal/texlive/2026/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/te
+xlive/2026/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on main.pdf (22 pages, 175461 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
+ 115 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,6 @@
 % echo 'alias buildthesis="cd \"/Users/tankarman/Library/CloudStorage/OneDrive-Personal/PhD/Thesis/Chapter 1/post_jri\" && ./build.sh"' >> ~/.zshrc
 % source ~/.zshrc
-\documentclass[natbib=false,preprint,12pt]{elsarticle}
+\documentclass[nonatbib,preprint,12pt]{elsarticle}
 \usepackage{color}
 \usepackage{tikz}
 \usepackage{graphicx}
@@ -24,7 +24,10 @@
 \usepackage{bbm}
 \usepackage{caption}
 \usepackage{subcaption}
-\PassOptionsToPackage{natbib=false}{elsarticle}
+\let\bibfont\relax
+\let\Citeauthor\relax
+\let\bibhang\relax
+\let\citename\relax
 \usepackage[style=authoryear,uniquename=false]{biblatex}
 \usepackage{tabularx,ragged2e,booktabs,caption}
 \newcolumntype{C}[1]{>{\Centering}m{#1}}
@@ -155,6 +158,9 @@
 \makeatother
 
 %opening
+\begin{document}
+\begin{frontmatter}
+
 \title{Genetic testing: Assessing severity and implications for health insurance}
 
 
@@ -167,7 +173,8 @@ The authors are grateful for the helpful comments and suggestions received from 
 
 
 \author{Helmut Gründl\fnref{fn1}}
-\ead{gruendl@finance.uni-frankfurt.de}
+% The reference title page does not print a second author email.
+% \ead{gruendl@finance.uni-frankfurt.de}
 
 
 %\fntext[fn2]{Lecturer}
@@ -185,12 +192,7 @@ The authors are grateful for the helpful comments and suggestions received from 
 % \textit{(JEL D41, D42, D43, D81, D82, D83, D84, D85, D86)}
 \end{abstract}
 
-\begin{document}
-
-
-
-
-\maketitle
+\end{frontmatter}
 
 
 
@@ -233,29 +235,7 @@ The literature so far assumes that individuals always prefer insurance. \citeaut
 
 
 \section{Model: Testing for severity}
-This section introduces the model we use to examine whether individuals test for severity under different information regimes. Suppose there is an individual who can suffer a loss of $i$ where $i \in \{L,H\}$ and $L<H$, i.e. the individual who suffers a loss of $H$ is the high severity type and the individual who suffers a loss of $L$ is the low severity type. There is a unit mass of individuals where $\theta_H$ is the share of $H$-types and $\theta_L$ is the share of $L$ types and $\theta_H + \theta_L = 1$. The individual is unable to manipulate her risk type\footnote{\citeauthor{tan2025testing} (\citeyear{tan2025testing}) considers loss reduction with severity information.}. The probability of suffering this loss is $\mu$. The individual is initially unaware of her risk type and must decide whether to inform herself through testing\footnote{In \citeauthor{dionne2014economic} (\citeyear{dionne2014economic}), the effects of a ban on risk classification, i.e. the ability of insurance companies to use type information to price insurance contracts, depends on \textit{when} individuals purchase insurance. There are two `time' perspectives, i.e. the `interim' perspective in which individuals have tested and are aware of type information but have not purchased insurance yet, and the `ex-ante' perspective in which individuals have neither tested nor purchased insurance yet. In our paper, we consider the `ex-ante' perspective, in which before deciding whether to test, individuals need to determine optimal insurance for both risk types as well as optimal insurance when remaining uninformed. Depending on the information regime, an `interim' perspective is possible, i.e. the individual only decides what coverage to purchase after being tested. However, we assume that the individual considers all possibilities in terms of the expected utility from being a particular type before testing as we want to examine whether testing per se is worthwhile.}, where the test is costless, and also whether to purchase an insurance contract, $\{q,d\}$ where $q$ is the premium rate and $d$ is the insurance proceeds paid out in the event of a loss (let the premium be $\pi = qd$). We also assume that the individual initially has no information about severity and that a loss can only occur after the insurance decision has been made. The formal assumptions are below:
-
-\begin{assumption}[Preferences]\label{ass:preferences}
-The individual's von Neumann-Morgenstern utility function $u : \mathbb{R} \to \mathbb{R}$ is $C^3$, with $u'(\cdot) > 0$, $u''(\cdot) < 0$, and $u'''(\cdot) > 0$ (prudence in the sense of \citeauthor{kimball1990precautionary} (\citeyear{kimball1990precautionary}). The domain of $u$ is wide enough that all wealth realizations encountered below lie in its interior.
-\end{assumption}
-
-\begin{assumption}[Parameters]\label{ass:parameters}
-$0 < L < H < w$; $\mu \in (0,1)$; $\theta_H, \theta_L \in (0,1)$ with $\theta_H + \theta_L = 1$. Define $A := \theta_H H + \theta_L L \in (L,H)$ as the population mean loss size.
-\end{assumption}
-
-\begin{assumption}[Insurance market]\label{ass:market}
-Insurers are risk-neutral, competitive, and earn zero expected profit on each contract sold. With the principle of indemnity, the insurer's payout in state $i$ is $\min\{i, d\}$; without it, the payout is $d$ regardless of the realized loss.
-\end{assumption}
-
-For compactness, define state-contingent wealth under a contract $(q,d)$ as:
-\begin{align*}
-W_0(q,d) &:= w - qd && \text{(no loss),} \\
-W_1^{np}(q,d,i) &:= w - qd - i + d && \text{(loss, no principle of indemnity),} \\
-W_1^{p}(q,d,i) &:= w - qd - i + \min\{i,d\} && \text{(loss, principle of indemnity).}
-\end{align*}
-
-A note on which assumption does which work in what follows. Assumption \ref{ass:preferences}'s first two properties ($u' > 0$, $u'' < 0$) capture standard risk aversion. The third property ($u''' > 0$, equivalently $u'$ convex) is required only for the over-insurance result in Proposition~\ref{prop:duninfnp} below; risk aversion alone is insufficient there. Conversely, the no-testing result under the principle of indemnity (Proposition~\ref{prop:noindemnitytestnoselect}) follows from risk aversion alone and does not require prudence --- a distinction we return to.
-% The individual is endowed with a wealth of $w$ where $i < w$. The individual's von Neumann-Morgenstern utility function, $u()$, has the following properties: $u'() > 0$ and $u''()<0$. We also assume that the individual initially has no information about severity and that a loss can only occur after the insurance decision has been made. 
+This section introduces the model we use to examine whether individuals test for severity under different information regimes. Suppose there is an individual who can suffer a loss of $i$ where $i \in \{L,H\}$ and $L<H$, i.e. the individual who suffers a loss of $H$ is the high severity type and the individual who suffers a loss of $L$ is the low severity type. There is a unit mass of individuals where $\theta_H$ is the share of $H$-types and $\theta_L$ is the share of $L$ types and $\theta_H + \theta_L = 1$. The individual is unable to manipulate her risk type\footnote{\citeauthor{tan2025testing} (\citeyear{tan2025testing}) considers loss reduction with severity information.}. The probability of suffering this loss is $\mu$. The individual is initially unaware of her risk type and must decide whether to inform herself through testing\footnote{In \citeauthor{dionne2014economic} (\citeyear{dionne2014economic}), the effects of a ban on risk classification, i.e. the ability of insurance companies to use type information to price insurance contracts, depends on \textit{when} individuals purchase insurance. There are two `time' perspectives, i.e. the `interim' perspective in which individuals have tested and are aware of type information but have not purchased insurance yet, and the `ex-ante' perspective in which individuals have neither tested nor purchased insurance yet. In our paper, we consider the `ex-ante' perspective, in which before deciding whether to test, individuals need to determine optimal insurance for both risk types as well as optimal insurance when remaining uninformed. Depending on the information regime, an `interim' perspective is possible, i.e. the individual only decides what coverage to purchase after being tested. However, we assume that the individual considers all possibilities in terms of the expected utility from being a particular type before testing as we want to examine whether testing per se is worthwhile.}, where the test is costless, and also whether to purchase an insurance contract, $\{q,d\}$ where $q$ is the actuarially fair premium rate and $d$ is the insurance proceeds paid out in the event of a loss (let the premium be $\pi = qd$). The individual is endowed with a wealth of $w$ where $i < w$. The individual's von Neumann-Morgenstern utility function, $u()$, has the following properties: $u'() > 0$ and $u''()<0$. We also assume that the individual initially has no information about severity and that a loss can only occur after the insurance decision has been made.
 
 \subsection{Contracts in the absence of the principle of indemnity} \label{sev_absence}
 
@@ -284,57 +264,16 @@ Let $A=\theta_H H + \theta_L L$ be the mean loss size in the population.
 \setcounter{theorem}{0}
 \renewcommand{\thetheorem}{\arabic{theorem}}
 
-\begin{prop}\label{prop:duninfnp}
-    Suppose insurance is actuarially fair, $q=\mu$, and the principle of indemnity is absent. The uninformed individual's problem
-    \begin{align}
-        V_{U,np} = \underset{\rm d\geq0}{\rm max} \left\{\sum_{i\in\{H,L\}} \theta_i\mu u(w-\mu d - i + d)+(1-\mu)u(w-\mu d)\right\}
-    \end{align}
-    admits a unique optimum, $d_{U,np}^*$, characterized by the FOC
-    \begin{align}\label{prop:prop1foc}
-        \left[\sum_{i\in\{H,L\}} \theta_i u'(W_1^{np}(\mu,d,i))\right] = u'(W_0(\mu,d)).
-    \end{align}
-    Equivalently, dividing by $(1-\mu)$:
-    \begin{align}
-        \sum_{i\in\{H,L\}} \theta_i u'(w-\mu d-i+d) = u'(w-\mu d)
-    \end{align}
-    Under Assumption 1, $d_{U,np}^*>A$.
+\begin{prop}
+Given that $q=\mu$, the necessary condition for an optimal d is:
+\begin{align}
+\theta_H u'(w-qd_{U,np}^*-H+d_{U,np^*}) + \theta_L u'(w-qd_{U,np}^*-L+d_{U,np}^*) = u'(w-qd_{U,np}^*)
+\end{align}
+The optimal coverage which satisfies the above condition for the uninformed individual is $d_{U,np}^* > A$ in the absence of the principle of indemnity\footnote{severity can be considered a type of background risk because individuals are unable to reduce the risk despite being informed about it. In \citeauthor{gollier1996risk} (\citeyear{gollier1996risk}), a utility function is considered `risk vulnerable' if individuals become more risk-averse with the introduction of an unfair background risk, i.e. a risk that leads to a decrease in wealth but is not in the control of the individual. With severity and due to the concavity of $u'()$, the absolute risk aversion of $V_{U,np}$ is greater than the absolute risk aversion of the ordinary utility function. This results in individuals purchasing an insurance coverage which exceeds the expected loss across types.}. Note that $u'()$ is assumed to be convex, which implies prudence, i.e. $u'''()>0$.
 \end{prop}
 
 \begin{proof}
-    In the first step, we show that the objective function is strictly concave. Given that $q=\mu$, let
-    \begin{align*}
-        \Phi(d):= \mu \sum_{i \in \{H,L\}} \theta_i u(w-\mu d -i + d) + (1-\mu) u (w-\mu d)
-    \end{align*}
-    Taking the FOC,
-    \begin{align*}
-        \Phi'(d) = \mu (1-\mu) \sum_i \theta_i u'(w-\mu d - i + d) - \mu (1-\mu)u'(w-\mu d)
-    \end{align*}
-    since $\partial W_1^{np}/\partial d = 1-\mu$ and $\partial W_0/\partial d = -\mu$. Taking the second order condition,
-    \begin{align*}
-        \Phi''(d)=\mu(1-\mu)^2 \sum_i \theta_i u''(w-\mu d -i + d) + \mu^2(1-\mu)u''(w-\mu d)<0
-    \end{align*}
-    since $u''<0$ everywhere. Hence, $\Phi$ is strictly concave on $\mathbb{R}_+$.
-    In the second step, we show that an interior optimum exists. Note
-    \begin{align*}
-        \Phi'(0)= \mu(1-\mu)\left[\sum_i \theta_i u'(w-i)-u'(w)\right]>0
-    \end{align*}
-    because $u'(w-i)>u'(w)$ for each $i>0$ (by $u''<0$) as $d \rightarrow \infty$, $W_0 \rightarrow -\infty$ and $u'(W_0)\rightarrow +\infty$. Since the no loss term $u'(w-\mu d)$ grows unboundedly while the loss state terms grow at the slower rate $(1-\mu)$, eventually $\Phi'(d)<0$ for $d$ sufficiently large. Hence, $\Phi'$ changes sign and by strict concavity has a unique zero, which is $d_{U,np}^*$.
-    In the third step, setting $\Phi'(d)=0$ and dividing by $\mu (1-\mu)$ yields equation \ref{prop:prop1foc}.
-    In the final step, since $d_{U,np}^*>A$, we evaluate the FOC at $d=A$. The loss state wealths are 
-    \begin{align*}
-        W_{1}^{np}(\mu,A,H) = w-\mu A - H+A=w-\mu A -\theta_L (H-L) \\
-        W_1^{np}{\mu,A,L} = w- \mu A - L + A = w -\mu A + \theta_H(H-L)
-    \end{align*}
-    The $\theta_i$-weighted average is exactly $w-\mu A$, which equals $W_0 (\mu,A)$.
-    So we must determine whether
-    \begin{align*}
-        \theta_H u'(W_0 - \theta_L(H-L))+\theta_L u'(W_0 + \theta_H(H-L)) \gtreqless u'(W_0)
-    \end{align*}
-    The two arguments on the left have $\theta_i$-weighted mean equal to $W_0$. By Assumption \ref{ass:preferences}, $u'$ is strictly convex (since $u'''>0$). Jensen's inequality gives
-    \begin{align*}
-        \theta_H u'(W_0 - \theta_L (H-L)) + \theta_L u'(W_0 + \theta_H(H-L)) > u'(W_0)
-    \end{align*}
-    Hence $\Phi'(A)>0$, and by strict concavity, the optimum $d_{U,np}^*$ lies strictly to the right of A.
+Suppose $d_{U,np}^* = A$, due to the convexity of $u'()$, the linear combination, $\theta_H u'(w-\pi_{U,np}^*-H+d_{U,np^*}) + \theta_L u'(w-\pi_{U,np}^*-L+d_{U,np}^*)$, exceeds $u'(w-\pi_{U,np}^*)$. Now, suppose $d_{U,np}^* < A$. Think of this graphically, where wealth is on the $x$-axis and utility is on the $y$-axis. This means that the $x$-value of the linear combination, $w-\pi_{U,np}^*+d_{U,np}^*-A$, lies to the left of, $w-\pi_{U,np}^*$. As a result, the linear combination of $\theta_H u'(w-\pi_{U,np}^*-H+d_{U,np^*}) + \theta_L u'(w-\pi_{U,np}^*-L+d_{U,np}^*)$ again exceeds $u'(w-\pi_{U,np}^*)$. Hence, it is necessary for the $x$-value of the linear combination, $w-\pi_{U,np}^*+d_{U,np}^*-A$, to exceed of $w-\pi_{U,np}^*$; this implies $d_{U,np}^* > A$.
 \end{proof}
 
 % \begin{prop}
@@ -349,10 +288,9 @@ Let $A=\theta_H H + \theta_L L$ be the mean loss size in the population.
 % Suppose $d_{U,np}^* = A$, due to the convexity of $u'()$, the linear combination, $\theta_H u'(w-\pi_{U,np}^*-H+d_{U,np^*}) + \theta_L u'(w-\pi_{U,np}^*-L+d_{U,np}^*)$, exceeds $u'(w-\pi_{U,np}^*)$. Now, suppose $d_{U,np}^* < A$. Think of this graphically, where wealth is on the $x$-axis and utility is on the $y$-axis. This means that the $x$-value of the linear combination, $w-\pi_{U,np}^*+d_{U,np}^*-A$, lies to the left of, $w-\pi_{U,np}^*$. As a result, the linear combination of $\theta_H u'(w-\pi_{U,np}^*-H+d_{U,np^*}) + \theta_L u'(w-\pi_{U,np}^*-L+d_{U,np}^*)$ again exceeds $u'(w-\pi_{U,np}^*)$. Hence, it is necessary for the $x$-value of the linear combination, $w-\pi_{U,np}^*+d_{U,np}^*-A$, to exceed of $w-\pi_{U,np}^*$; this implies $d_{U,np}^* > A$.
 % \end{proof}
 
-To determine whether it is worthwhile to test for severity, the individual needs to compare the expected utility from testing and forgoing information. Suppose there are three contracts available: $C_H = \{q, H\}$, $C_L = \{q, L\}$, $C_U = \{q, d_{U,np}^*\}$ and these contracts are actuarially fair, $q=\mu$, hence,  $C_H = \{\mu, H\}$, $C_L = \{\mu, L\}$, $C_U = \{\mu, d_{U,np}^*\}$. We will determine the equilibrium regime by regime.
+To determine whether it is worthwhile to test for severity, the individual needs to compare the expected utility from testing and forgoing information.
 
-\setcounter{theorem}{0}
-\renewcommand{\thetheorem}{\arabic{theorem}}
+\iffalse
 \begin{lemma}\label{lemma:alwaysbuy}
     For any uninformed contract $C_U = \{\mu,d\}$ where $d>0$:
     \begin{align*}
@@ -427,6 +365,19 @@ In the consent law, insurers cannot observe test status but individuals may volu
 
 
 % \end{proof}
+\fi
+
+\begin{prop}
+Suppose there are three contracts available: $C_H = \{q, H\}$, $C_L = \{q, L\}$, $C_U = \{q, d_{U,np}^*\}$ and these contracts are actuarially fair, $q=\mu$. In the absence of the principle of indemnity, an individual finds it optimal to test for severity as long as $C_H$ and $C_L$ are offered. Purchasing $C_H$ if one is the $H$-type and purchasing $C_L$ if one is the $L$-type and testing is the pure strategy Nash equilibrium under the disclosure duty, a weak perfect Bayesian equilibrium under the code of conduct, and a Bayesian Nash equilibrium under the consent law and a perfect Bayesian equilibrium under the information ban.
+\end{prop}
+
+\begin{proof}
+Under the disclosure duty and code of conduct, the insurance company can condition on testing status, hence would offer $C_H$ and $C_L$ to tested individuals and $C_U$ to untested individuals. Since individuals self-select into type appropriate contracts when informed, $C_H$ and $C_L$ are optimal for $H$- and $L$- types respectively. When uninformed, $C_U$ is optimal. For testing to be preferred, then it is necessary that $\theta_H V_{I,np}^H(C_H)+\theta_L V_{I,np}^L(C_L) > V_{U,np} (C_U)$, where $V_{I,np}^H(C_H) = u(w-qH)$, $V_{I,np}^L(C_L) = u(w-qL)$ and $V_{U,np} (C_U) = [\sum_{i \in \{H,L\}} \theta_i \mu u(w-qd_{U,np}^* -i+d_{U,np}^*)]+ (1-\mu)u(w-qd_{U,np}^*)$. Due to the concavity of the utility function, the utility resulting from purchasing full coverage always exceeds the utility of purchasing any other level of coverage. As a result, there is always a positive value from testing. Under the disclosure duty, there is complete information hence a Nash equilibrium arises where untested individuals purchase the pooled contract, informed individuals purchase the tailored contracts, and individuals test. Under the code of conduct, the insurance company has incomplete information regarding the individual's severity. However, the insurance company can again simply offer the menu of contracts based on testing status. In the weak (separating) Perfect Bayesian equilibrium, individuals optimally test and then truthfully disclose type information. Given sequential rationality, individuals then purchase appropriately tailored contracts.
+
+Under the consent law and information ban, the insurer would need to anticipate whether individuals test or not due to incomplete information. Since the insurer will make zero expected profit in the absence of the principle of indemnity, the requirement to anticipate whether individuals test or not will not lead to an expected loss regardless of the contracts offered. An insurer can offer 1) $C_H$, $C_L$ and $C_U$, 2) only $C_U$ or 3) $C_H$ and $C_L$. In 1) and 3), individuals test and in 2) individuals do not test. Under the consent law, 3) can be classified as a Bayesian Nash equilibrium if the insurer conditions $C_L$ on the presentation of test results. Untested individuals and individuals who do not reveal test results can only purchase $C_H$. Optimally, individuals would then test and purchase tailored contracts. 1) is identical to 3), except individuals also have access to the $C_U$ contract. However, individuals do not pick $C_U$ in equilibrium. Under the information ban, 1) and 3) are perfect Bayesian equilibria since insurers cannot condition contracts on test results. The insurer will not be able to update their beliefs on individual types until the purchase of insurance.
+
+Offering only $C_U$ leads to a pooling perfect Bayesian equilibrium since there is no benefit to testing due to the availability of only one contract. Insurers also cannot update beliefs from the prior. However, 2) would no longer be an equilibrium if the insurance market is monopolistic\footnote{Furthermore, 2) is inefficient ex-post because if some individuals experience a loss event and discover they are the $L$-type, they will exit the insurance market, leaving only $H$-types and increasing the premium - a classic `lemons' problem and a \citeauthor{rothschild1978equilibrium} (\citeyear{rothschild1978equilibrium}) pooling equilibrium.}. Suppose $C_U$ is offered by every insurer. An insurer who deviates by offering $C_H$ and $C_L$ will earn monopoly profits since individuals will be nudged to test and purchase the appropriate coverage. If there are administrative costs to setting up insurance contracts, the non-deviating insurers will experience a loss. Hence, the non-deviating insurers will subsequently offer $C_H$ and $C_L$ to avoid a loss. This is the so-called Miyazaki-Spence (subgame perfect) equilibrium.
+\end{proof}
 \setcounter{theorem}{0}
 \renewcommand{\thetheorem}{\arabic{theorem}}
 \begin{corollary}\label{corollary:nonnegnp}

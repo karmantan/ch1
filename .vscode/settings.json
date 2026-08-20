@@ -1,0 +1,26 @@
+{
+  "latex-workshop.latex.outDir": "%DIR%",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk (main.tex)",
+      "command": "latexmk",
+      "args": [
+        "-pdf",
+        "-interaction=nonstopmode",
+        "-synctex=1",
+        "-file-line-error",
+        "main.tex"
+      ],
+      "cwd": "%DIR%"
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "Build main.tex with latexmk",
+      "tools": [
+        "latexmk (main.tex)"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipe.default": "first"
+}
